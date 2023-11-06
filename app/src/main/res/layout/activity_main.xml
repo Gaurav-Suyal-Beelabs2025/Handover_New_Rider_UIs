@@ -4,15 +4,497 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <TextView
+   <android.support.v4.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    <ImageView
+        android:id="@+id/ern_backbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_btn" />
+
+    <TextView
+        android:id="@+id/txt_ern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:text="@string/earnings"
+        android:textSize="20sp"
+        android:fontFamily="@font/sora_bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/ern_backbtn"
+        app:layout_constraintStart_toEndOf="@+id/ern_backbtn"
+        app:layout_constraintTop_toTopOf="@+id/ern_backbtn" />
+
+
+
+    <RadioGroup
+        android:id="@+id/ern_radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ern">
+
+
+
+        <RadioButton
+            android:id="@+id/radioButtonOption11"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:paddingVertical="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="@font/sora_medium"
+            android:textSize="16sp"
+            android:background="@drawable/drawable_radio_btn"
+            android:button="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:text="Today"/>
+        <RadioButton
+            android:id="@+id/radioButtonOption22"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#686868"
+            android:background="@drawable/drawable_radio_btn"
+            android:paddingVertical="@dimen/_15sdp"
+            android:fontFamily="@font/sora_medium"
+            android:backgroundTint="#F3F3F3"
+            android:button="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/history" />
+
+
+    </RadioGroup>
+
+
+    <View
+        android:id="@+id/ern_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEDEDE"
+        android:layout_marginTop="@dimen/_11sdp"
+        app:layout_constraintTop_toBottomOf="@+id/ern_radioGroup1"/>
+
+
+    <LinearLayout
+        android:id="@+id/ern_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ern_view1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_radio_btn"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:text="55"
+                android:fontFamily="@font/sora_bold"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/delivered"
+                android:fontFamily="@font/sora_regular"
+                android:textColor="@color/broun"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:background="@drawable/drawable_radio_btn"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:text="18"
+                android:fontFamily="@font/sora_bold"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/skipped"
+                android:fontFamily="@font/sora_regular"
+                android:textColor="@color/broun"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:background="@drawable/drawable_radio_btn"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:text="9"
+                android:fontFamily="@font/sora_bold"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/cancelled"
+                android:fontFamily="@font/sora_regular"
+                android:textColor="@color/broun"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ern_moneyicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        app:layout_constraintStart_toStartOf="@+id/ern_linear_layout"
+        app:layout_constraintTop_toBottomOf="@+id/ern_linear_layout"
+        app:srcCompat="@drawable/money_icon" />
+
+    <TextView
+        android:id="@+id/ern_rupyatxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹24.63"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:fontFamily="@font/sora_bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ern_totlern"
+        app:layout_constraintStart_toEndOf="@+id/ern_moneyicon"
+        app:layout_constraintTop_toTopOf="@+id/ern_moneyicon" />
+
+    <TextView
+        android:id="@+id/ern_totlern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_earning"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:textSize="16sp"
+        android:textColor="@color/broun"
+        android:fontFamily="@font/sora_regular"
+        app:layout_constraintBottom_toBottomOf="@+id/ern_moneyicon"
+        app:layout_constraintStart_toEndOf="@+id/ern_moneyicon" />
+
+
+    <android.support.constraint.ConstraintLayout
+
+        android:id="@+id/ern_cons2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/drawable_radies"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/ern_totlern">
+
+
+        <ImageView
+            android:id="@+id/ern_ratecardicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ratecard_icon" />
+
+        <TextView
+            android:id="@+id/ern_ratetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rate_card"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/sora_regular"
+            app:layout_constraintStart_toEndOf="@+id/ern_ratecardicon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ern_checkpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_your_payment_structure"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textColor="@color/broun"
+            android:textSize="14sp"
+            android:fontFamily="@font/sora_regular"
+            app:layout_constraintStart_toEndOf="@+id/ern_ratecardicon"
+            app:layout_constraintTop_toBottomOf="@+id/ern_ratetxt" />
+
+        <ImageView
+            android:id="@+id/ern_nextbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/next_btn" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/ern_txtguidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guidelines_for_doing_orders"
+        android:textSize="14sp"
+        android:fontFamily="@font/sora_regular"
+        android:textColor="@color/broun"
+        android:layout_marginTop="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/ern_cons2"
+        app:layout_constraintTop_toBottomOf="@+id/ern_cons2" />
+
+    <TextView
+        android:id="@+id/ern_txtlearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn More"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginStart="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/ern_txtguidline"
+        app:layout_constraintStart_toEndOf="@+id/ern_txtguidline"
+        app:layout_constraintTop_toTopOf="@+id/ern_txtguidline" />
+
+    <View
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="1dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/ern_txtlearn"
+        app:layout_constraintStart_toStartOf="@+id/ern_txtlearn"
+        app:layout_constraintTop_toBottomOf="@+id/ern_txtlearn" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ern_cons3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:background="@drawable/drabale_incentives_bonus"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ern_txtguidline">
+
+
+        <ImageView
+            android:id="@+id/ern_insetiveicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/incentive_icon" />
+
+        <TextView
+            android:id="@+id/ern_incentivetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/incentives_amp_bonus"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/sora_regular"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/ern_insetiveicon"
+            app:layout_constraintStart_toEndOf="@+id/ern_insetiveicon"
+            app:layout_constraintTop_toTopOf="@+id/ern_insetiveicon" />
+
+        <TextView
+            android:id="@+id/enr_moneytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹0.0"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sora_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/ern_incentivetxt"
+            app:layout_constraintStart_toEndOf="@+id/ern_incentivetxt"
+            app:layout_constraintTop_toTopOf="@+id/ern_incentivetxt" />
+
+        <ImageView
+            android:id="@+id/ern_backbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:tint="@color/blue"
+            app:layout_constraintBottom_toBottomOf="@+id/enr_moneytxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/enr_moneytxt"
+            app:srcCompat="@drawable/next_btn" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/ern_tran_histxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction History"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sora_bold"
+        app:layout_constraintStart_toStartOf="@+id/ern_cons3"
+        app:layout_constraintTop_toBottomOf="@+id/ern_cons3" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ern_cons4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_7sdp"
+        android:paddingHorizontal="@dimen/_11sdp"
+        android:background="@drawable/drawable_filter"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ern_tran_histxt">
+
+        <ImageView
+            android:id="@+id/ern_filtericon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/ern_filtertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/filter"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/sora_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/ern_filtericon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ern_filtericon"
+            app:layout_constraintTop_toTopOf="@+id/ern_filtericon" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ern_cons5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:background="@drawable/drawable_filter"
+        android:paddingHorizontal="@dimen/_11sdp"
+        android:paddingVertical="@dimen/_7sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/ern_cons4"
+        app:layout_constraintStart_toEndOf="@+id/ern_cons4"
+        app:layout_constraintTop_toTopOf="@+id/ern_cons4">
+
+
+        <TextView
+            android:id="@+id/ern_transactiontxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_regular"
+            android:text="All Transaction"
+            android:textColor="@color/broun"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ern_closebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close_icon"
+            android:layout_marginStart="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/ern_transactiontxt"
+            app:layout_constraintStart_toEndOf="@+id/ern_transactiontxt"
+            app:layout_constraintTop_toTopOf="@+id/ern_transactiontxt" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_collention_fare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ern_cons5" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+   </android.support.v4.widget.NestedScrollView>
 
 </android.support.constraint.ConstraintLayout>

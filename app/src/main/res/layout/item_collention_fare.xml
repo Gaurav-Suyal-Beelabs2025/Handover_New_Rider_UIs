@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="02 Sept 2023"
+        android:textSize="14sp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/sora_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ern_item_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:background="@drawable/drawable_radies"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/item_date"
+        >
+
+        <ImageView
+            android:id="@+id/item_close1icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/close1_icon"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancellation Fare "
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sora_regular"
+            app:layout_constraintStart_toEndOf="@+id/item_close1icon"
+            app:layout_constraintTop_toTopOf="@+id/item_close1icon" />
+
+        <TextView
+            android:id="@+id/itemern_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_regular"
+            android:text="RD16765297910708971"
+            android:textColor="@color/broun"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/item_moneytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ ₹11.24"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            android:fontFamily="@font/sora_semibold"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/item_cancellation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/sora_regular"
+            android:text="Cancellation Fare for 12:13 PM order"
+            android:textColor="@color/broun"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/itemern_id"
+            app:layout_constraintTop_toBottomOf="@+id/itemern_id" />
+
+
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:fontFamily="@font/sora_regular"
+            android:text="12:14 PM"
+            android:textColor="@color/broun"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/itemern_id"
+            app:layout_constraintTop_toBottomOf="@+id/item_cancellation" />
+
+        <ImageView
+            android:id="@+id/item_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:tint="@color/blue"
+            app:layout_constraintBottom_toBottomOf="@+id/item_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/item_time"
+            app:srcCompat="@drawable/next_btn" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/sora_regular"
+            app:layout_constraintBottom_toBottomOf="@+id/item_backbtn"
+            app:layout_constraintEnd_toStartOf="@+id/item_backbtn"
+            app:layout_constraintTop_toTopOf="@+id/item_backbtn" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

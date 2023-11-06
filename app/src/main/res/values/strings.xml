@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">HandoverNewRiderUIs</string>
+    <string name="earnings">Earnings</string>
+    <string name="history">History</string>
+    <string name="delivered">Delivered</string>
+    <string name="skipped">Skipped</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="total_earning">Total Earning</string>
+    <string name="check_your_payment_structure">Check your payment structure</string>
+    <string name="rate_card">Rate Card</string>
+    <string name="guidelines_for_doing_orders">Guidelines for doing orders</string>
+    <string name="incentives_amp_bonus"><![CDATA[Incentives & Bonus]]></string>
+    <string name="filter">Filter</string>
 </resources>
