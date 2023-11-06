@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">HandoverNewRiderUIs</string>
+<<<<<<< HEAD
     <string name="earnings">Earnings</string>
     <string name="history">History</string>
     <string name="delivered">Delivered</string>
@@ -11,4 +12,25 @@
     <string name="guidelines_for_doing_orders">Guidelines for doing orders</string>
     <string name="incentives_amp_bonus"><![CDATA[Incentives & Bonus]]></string>
     <string name="filter">Filter</string>
+=======
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_profile">My Profile</string>
+    <string name="help">Help</string>
+    <string name="rajeev_ranjan">Rajeev Ranjan</string>
+    <string name="bike_rider">Bike Rider</string>
+    <string name="rajeev_chauk_blue_ford_market_new_delhi">Rajeev Chauk blue ford market New Delhi</string>
+    <string name="rating">Rating</string>
+    <string name="_4_4">4.4 ⭐️</string>
+    <string name="orders">Orders</string>
+    <string name="months">Months</string>
+    <string name="_12">12</string>
+    <string name="_64">64</string>
+    <string name="handover_id_card">Handover Id Card</string>
+    <string name="documents_amp_details"><![CDATA[Documents & Details]]></string>
+    <string name="my_performance">My Performance</string>
+    <string name="your_services">Your Services</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="vehicle_details">Vehicle Details</string>
+>>>>>>> efd1a61acd083a73787e4eb6e10b9d6a62c35f8c
 </resources>

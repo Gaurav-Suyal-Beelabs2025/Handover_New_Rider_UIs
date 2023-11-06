@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/drabale_incentives_bonus.xml" value="0.1895" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/drawable_filter.xml" value="0.1875" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/drawable_radies.xml" value="0.1895" />
@@ -13,6 +14,15 @@
         <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/font/sora.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/item_collention_fare.xml" value="0.5282854656222803" />
+=======
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/buttom_logout_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/main_layout_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/my_profile_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/rating_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/font/sora_regular.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_my__profile_.xml" value="0.264" />
+>>>>>>> efd1a61acd083a73787e4eb6e10b9d6a62c35f8c
       </map>
     </option>
   </component>
