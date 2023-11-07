@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">HandoverNewRiderUIs</string>
-<<<<<<< HEAD
+    <
+    <
+    <
+    <
+    <
+    <
+    < HEAD
     <string name="earnings">Earnings</string>
     <string name="history">History</string>
     <string name="delivered">Delivered</string>
@@ -12,7 +18,7 @@
     <string name="guidelines_for_doing_orders">Guidelines for doing orders</string>
     <string name="incentives_amp_bonus"><![CDATA[Incentives & Bonus]]></string>
     <string name="filter">Filter</string>
-=======
+    =======
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="my_profile">My Profile</string>
@@ -32,5 +38,5 @@
     <string name="your_services">Your Services</string>
     <string name="language_settings">Language Settings</string>
     <string name="vehicle_details">Vehicle Details</string>
->>>>>>> efd1a61acd083a73787e4eb6e10b9d6a62c35f8c
+    >>>>>>> efd1a61acd083a73787e4eb6e10b9d6a62c35f8c
 </resources>
