@@ -7,7 +7,6 @@
     android:background="@color/white"
     tools:context=".Fragment_earning">
 
-
     <ImageView
         android:id="@+id/ern_backbtn"
         android:layout_width="wrap_content"
@@ -84,7 +83,14 @@
         android:layout_marginTop="@dimen/_11sdp"
         android:background="#DEDEDE"
         app:layout_constraintTop_toBottomOf="@+id/ern_radioGroup1" />
-
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/nested"
+    app:layout_constraintTop_toBottomOf="@id/ern_view1">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <LinearLayout
         android:id="@+id/ern_linear_layout"
@@ -93,7 +99,8 @@
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_13sdp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/ern_view1">
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -218,68 +225,69 @@
         app:layout_constraintBottom_toBottomOf="@+id/ern_moneyicon"
         app:layout_constraintStart_toStartOf="@+id/ern_rupyatxt" />
 
-    <android.support.constraint.ConstraintLayout
+        <android.support.constraint.ConstraintLayout
 
-        android:id="@+id/ern_cons2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_18sdp"
-        android:background="@drawable/drawable_radies"
-        android:paddingVertical="@dimen/_11sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ern_totlern">
-
-
-        <ImageView
-            android:id="@+id/ern_ratecardicon"
-            android:layout_width="wrap_content"
+            android:id="@+id/ern_cons2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_8sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ratecard_icon" />
-
-        <TextView
-            android:id="@+id/ern_ratetxt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_15sdp"
-            android:fontFamily="@font/sora_regular"
-            android:text="rate card"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@+id/ern_ratecardicon"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/ern_checkpayment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_15sdp"
-            android:fontFamily="@font/sora_regular"
-            android:text="check your payment structure"
-            android:textColor="@color/broun"
-            android:textSize="14sp"
-            app:layout_constraintStart_toEndOf="@+id/ern_ratecardicon"
-            app:layout_constraintTop_toBottomOf="@+id/ern_ratetxt" />
-
-        <ImageView
-            android:id="@+id/ern_nextbtn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_12sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="@drawable/drawable_radies"
+            android:paddingVertical="@dimen/_11sdp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/next_btn" />
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ern_totlern">
 
 
-    </android.support.constraint.ConstraintLayout>
+            <ImageView
+                android:id="@+id/ern_ratecardicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ratecard_icon" />
 
-    <TextView
+            <TextView
+                android:id="@+id/ern_ratetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/sora_regular"
+                android:text="rate card"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/ern_ratecardicon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ern_checkpayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/sora_regular"
+                android:text="check your payment structure"
+                android:textColor="@color/broun"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/ern_ratecardicon"
+                app:layout_constraintTop_toBottomOf="@+id/ern_ratetxt" />
+
+            <ImageView
+                android:id="@+id/ern_nextbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/next_btn" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
         android:id="@+id/ern_txtguidline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -465,21 +473,18 @@
             app:layout_constraintStart_toEndOf="@+id/ern_transaction"
             app:layout_constraintTop_toTopOf="@+id/ern_transaction" />
 
-
-
-
     </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem="@layout/item_collention_fare"
         app:layout_constraintEnd_toEndOf="parent"
+        tools:itemCount="4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ern_cons5" />
+        app:layout_constraintTop_toBottomOf="@+id/nested" />
 
+        </android.support.constraint.ConstraintLayout>
 
-
-
-
-</android.support.constraint.ConstraintLayout>
