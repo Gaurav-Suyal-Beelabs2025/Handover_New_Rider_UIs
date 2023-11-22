@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_Fragment">
+
+
+    <fragment
+        android:id="@+id/home_Fragment"
+        android:name="com.suyal.handovernewrideruis.Home_Fragment"
+        android:label="fragment_home_"
+        tools:layout="@layout/fragment_home_" />
+    <fragment
+        android:id="@+id/earning_Fragment"
+        android:name="com.suyal.handovernewrideruis.Earning_Fragment"
+        android:label="fragment_earning_"
+        tools:layout="@layout/fragment_earning_" />
+    <fragment
+        android:id="@+id/payout_Fragment"
+        android:name="com.suyal.handovernewrideruis.Payout_Fragment"
+        android:label="fragment_payout_"
+        tools:layout="@layout/fragment_payout_" />
+    <fragment
+        android:id="@+id/profile_Fragment"
+        android:name="com.suyal.handovernewrideruis.Profile_Fragment"
+        android:label="fragment_profile_"
+        tools:layout="@layout/fragment_profile_" >
+        <action
+            android:id="@+id/action_profile_Fragment_to_handover_id_cardFragment"
+            app:destination="@id/handover_id_cardFragment" />
+        <action
+            android:id="@+id/action_profile_Fragment_to_rate_Card_Fragment"
+            app:destination="@id/rate_Card_Fragment" />
+        <action
+            android:id="@+id/action_profile_Fragment_to_guidelines_Fragment"
+            app:destination="@id/guidelines_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/handover_id_cardFragment"
+        android:name="com.suyal.handovernewrideruis.Handover_id_cardFragment"
+        android:label="fragment_handover_id_card"
+        tools:layout="@layout/fragment_handover_id_card" />
+    <fragment
+        android:id="@+id/rate_Card_Fragment"
+        android:name="com.suyal.handovernewrideruis.Rate_Card_Fragment"
+        android:label="fragment_rate__card_"
+        tools:layout="@layout/fragment_rate__card_" />
+    <fragment
+        android:id="@+id/guidelines_Fragment"
+        android:name="com.suyal.handovernewrideruis.Guidelines_Fragment"
+        android:label="fragment_guidelines_"
+        tools:layout="@layout/fragment_guidelines_" />
+
+
+</navigation>

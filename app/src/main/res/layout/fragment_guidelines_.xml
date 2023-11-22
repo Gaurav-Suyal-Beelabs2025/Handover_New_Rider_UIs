@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Guidelines_Fragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingVertical="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <ImageView
+            android:id="@+id/ic_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back_black"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_guidelines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/sora_bold"
+            android:text="@string/guidelines"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_arrow_back"
+            app:layout_constraintStart_toEndOf="@id/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="@+id/ic_arrow_back" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EAEBEE"
+        app:layout_constraintTop_toBottomOf="@id/layout_include"/>
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/view">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+
+       <TextView
+           android:id="@+id/txt_rules_to_follow"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text="@string/rules_to_follow_to_be_a_handover_rider_and_receive_more_orders"
+           android:textSize="18sp"
+           android:textAllCaps="false"
+           android:textFontWeight="400"
+           android:textColor="#0F6FB5"
+           android:fontFamily="@font/sora_regular"
+           android:layout_marginTop="@dimen/_12sdp"
+           android:layout_marginStart="@dimen/_12sdp"
+           android:layout_marginEnd="@dimen/_15sdp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_behaviour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/behaviour_and_professionalism"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:fontFamily="@font/sora_regular"
+            android:layout_marginTop="@dimen/_17sdp"
+            app:layout_constraintTop_toBottomOf="@id/txt_rules_to_follow"
+            app:layout_constraintStart_toStartOf="@id/txt_rules_to_follow"/>
+
+
+        <TextView
+            android:id="@+id/txt_avoid_using"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/avoid_using_bad_professional_language_with_customers"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:textFontWeight="400"
+            android:textColor="#686868"
+            android:fontFamily="@font/sora_regular"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txt_behaviour"
+            app:layout_constraintTop_toBottomOf="@id/txt_behaviour"/>
+
+
+    <TextView
+        android:id="@+id/txt_never_demand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/never_demand_extra_money_and_return_the_change_to_the_customers"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textFontWeight="400"
+        android:textColor="#686868"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txt_behaviour"
+        app:layout_constraintTop_toBottomOf="@id/txt_avoid_using"/>
+
+
+    <TextView
+        android:id="@+id/txt_don_t_force"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_force_the_customer_to_cancel_the_ride_if_they_choose_to_pay_online"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textFontWeight="400"
+        android:textColor="#686868"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txt_behaviour"
+        app:layout_constraintTop_toBottomOf="@id/txt_never_demand"/>
+
+
+    <TextView
+        android:id="@+id/txt_don_t_make_unnecessary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_make_unnecessary_contacts_with_the_customer_before_and_after_the_trip"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textFontWeight="400"
+        android:textColor="#686868"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txt_behaviour"
+        app:layout_constraintTop_toBottomOf="@id/txt_don_t_force"/>
+
+    <TextView
+        android:id="@+id/txt_driving_and_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/driving_and_navigation"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginTop="@dimen/_17sdp"
+        app:layout_constraintTop_toBottomOf="@id/txt_don_t_make_unnecessary"
+        app:layout_constraintStart_toStartOf="@id/txt_rules_to_follow"/>
+
+
+
+    <TextView
+        android:id="@+id/txt_follow_speed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/follow_speed_limit_and_don_t_engage_in_fast_rash_riding"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textFontWeight="400"
+        android:textColor="#686868"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txt_behaviour"
+        app:layout_constraintTop_toBottomOf="@id/txt_driving_and_navigation"/>
+
+    <TextView
+        android:id="@+id/txt_arrive_at_the_correct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/arrive_at_the_correct_pickup_point_and_drop_at_right_location"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textFontWeight="400"
+        android:textColor="#686868"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txt_behaviour"
+        app:layout_constraintTop_toBottomOf="@id/txt_follow_speed"/>
+
+    <TextView
+        android:id="@+id/txt_follow_the_route"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/follow_the_route_shown_in_the_app_and_always_keep_your_gps_on"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textFontWeight="400"
+        android:textColor="#686868"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txt_behaviour"
+        app:layout_constraintTop_toBottomOf="@id/txt_arrive_at_the_correct"/>
+
+
+    <TextView
+        android:id="@+id/txt_cleanliness_and_hygiene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cleanliness_and_hygiene"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/txt_follow_the_route"
+        app:layout_constraintStart_toStartOf="@id/txt_rules_to_follow"/>
+
+
+    <TextView
+        android:id="@+id/txt_maintain_cleanliness"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/maintain_cleanliness_and_groom_yourself"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textFontWeight="400"
+        android:textColor="#686868"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txt_behaviour"
+        app:layout_constraintTop_toBottomOf="@id/txt_cleanliness_and_hygiene"/>
+
+    <TextView
+        android:id="@+id/txt_don_t_force_the_customer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_force_the_customer_to_cancel_the_ride_if_they_choose_to_pay_online"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textFontWeight="400"
+        android:textColor="#686868"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txt_behaviour"
+        app:layout_constraintTop_toBottomOf="@id/txt_maintain_cleanliness"/>
+
+
+    <TextView
+        android:id="@+id/txt_don_t_make_unnecessary_contacts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_make_unnecessary_contacts_with_the_customer_before_and_after_the_trip"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:textFontWeight="400"
+        android:textColor="#686868"
+        android:fontFamily="@font/sora_regular"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txt_behaviour"
+        app:layout_constraintTop_toBottomOf="@id/txt_don_t_force_the_customer"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/note_drawable"
+        android:text="@string/note_you_will_be_deactivated_if_you_fail_to_adhere_to_the_above_guidelines"
+        android:textColor="#FB0000"
+        android:textAllCaps="false"
+        android:textFontWeight="300"
+        android:textSize="14sp"
+        android:fontFamily="@font/sora_regular"
+        android:paddingVertical="@dimen/_12sdp"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_80sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_don_t_make_unnecessary_contacts"/>
+
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </androidx.core.widget.NestedScrollView>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+

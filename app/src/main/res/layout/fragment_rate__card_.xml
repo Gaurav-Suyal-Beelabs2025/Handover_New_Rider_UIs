@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Rate_Card_Fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingVertical="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <ImageView
+            android:id="@+id/ic_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back_black"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_rate_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/sora_bold"
+            android:text="@string/rate_card"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_arrow_back"
+            app:layout_constraintStart_toEndOf="@id/ic_arrow_back"
+            app:layout_constraintTop_toTopOf="@+id/ic_arrow_back" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEBEE"
+            app:layout_constraintTop_toBottomOf="@id/layout_include"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/view">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+     <ImageView
+         android:id="@+id/ic_location"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/ic_location_with_drawable"
+         android:layout_marginStart="@dimen/_12sdp"
+         android:layout_marginTop="@dimen/_12sdp"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textFontWeight="600"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:text="@string/zone"
+            android:fontFamily="@font/sora_semibold"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="@id/ic_location"
+            app:layout_constraintStart_toEndOf="@id/ic_location"/>
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora_regular"
+            android:text="@string/rajeev_chauk_blue_ford_market_new_delhi"
+            android:textAllCaps="false"
+            android:textColor="#686868"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/txt_zone"
+            app:layout_constraintTop_toBottomOf="@id/txt_zone" />
+
+
+         <TextView
+             android:id="@+id/txt_payout"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/payout"
+             android:textColor="@color/black"
+             android:textFontWeight="700"
+             android:textAllCaps="false"
+             android:textSize="20sp"
+             android:fontFamily="@font/sora_bold"
+             android:layout_marginTop="@dimen/_17sdp"
+             app:layout_constraintTop_toBottomOf="@id/txt_address"
+             app:layout_constraintStart_toStartOf="@id/ic_location"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_payout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_80sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/base_fare_drawable"
+            app:layout_constraintTop_toBottomOf="@id/txt_payout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_payout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/payout_drawable"
+                 app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_payout_for"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payout_for_00_00am_23_59_pm"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:textFontWeight="400"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/sora_regular"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/txt_base_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/base_fare"
+                android:textColor="#151515"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="@font/sora_regular"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_payout"/>
+
+            <TextView
+                android:id="@+id/txt_rs16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textFontWeight="400"
+                android:textColor="@color/black"
+                android:text="@string/_16"
+                android:fontFamily="@font/sora_regular"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="@id/txt_base_fare"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <View
+                android:id="@+id/view_base_fare"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layerType="software"
+                android:background="@drawable/dotted_drawable"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_base_fare"
+                app:layout_constraintStart_toStartOf="@id/txt_base_fare"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs16"/>
+
+
+
+            <TextView
+                android:id="@+id/txt_minimum_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minimum_fare"
+                android:textColor="#151515"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="@font/sora_regular"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="@id/txt_base_fare"
+                app:layout_constraintTop_toBottomOf="@id/view_base_fare"/>
+
+            <TextView
+                android:id="@+id/txt_rs20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textFontWeight="400"
+                android:textColor="@color/black"
+                android:text="@string/_20"
+                android:fontFamily="@font/sora_regular"
+                app:layout_constraintTop_toTopOf="@id/txt_minimum_fare"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs16"/>
+
+            <View
+                android:id="@+id/view_minimum_fare"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layerType="software"
+                android:background="@drawable/dotted_drawable"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_minimum_fare"
+                app:layout_constraintStart_toStartOf="@id/txt_base_fare"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs16"/>
+
+
+            <TextView
+                android:id="@+id/txt_earning_per_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/earning_per_km"
+                android:textColor="#151515"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="@font/sora_regular"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@id/txt_base_fare"
+                app:layout_constraintTop_toBottomOf="@id/view_minimum_fare"/>
+
+
+            <TextView
+                android:id="@+id/txt_every_km_till_3_kms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/every_km_till_3_kms"
+                android:textColor="#686868"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:fontFamily="@font/sora_regular"
+                android:layout_marginTop="@dimen/_14sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_earning_per_km"
+                app:layout_constraintStart_toStartOf="@id/txt_earning_per_km"/>
+
+            <TextView
+                android:id="@+id/txt_km14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_km"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:textFontWeight="400"
+                android:textColor="#686868"
+                android:fontFamily="@font/sora_regular"
+                app:layout_constraintTop_toTopOf="@id/txt_every_km_till_3_kms"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs20"/>
+
+
+            <TextView
+                android:id="@+id/txt_every_km_from_3_to_8_kms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/every_km_from_3_to_8_kms"
+                android:textColor="#686868"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:fontFamily="@font/sora_regular"
+                android:layout_marginTop="@dimen/_19sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_every_km_till_3_kms"
+                app:layout_constraintStart_toStartOf="@id/txt_earning_per_km"/>
+
+
+            <TextView
+                android:id="@+id/txt_km5.4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_5_4_km"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:textFontWeight="400"
+                android:textColor="#686868"
+                android:fontFamily="@font/sora_regular"
+                app:layout_constraintTop_toTopOf="@id/txt_every_km_from_3_to_8_kms"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs20"/>
+
+
+
+            <TextView
+                android:id="@+id/txt_every_km_from_8_to_12_kms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/every_km_from_8_to_12_kms"
+                android:textColor="#686868"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:fontFamily="@font/sora_regular"
+                android:layout_marginTop="@dimen/_19sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_every_km_from_3_to_8_kms"
+                app:layout_constraintStart_toStartOf="@id/txt_earning_per_km"/>
+
+            <TextView
+                android:id="@+id/txt_km6.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_6_5_km"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:textFontWeight="400"
+                android:textColor="#686868"
+                android:fontFamily="@font/sora_regular"
+                app:layout_constraintTop_toTopOf="@id/txt_every_km_from_8_to_12_kms"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs20"/>
+
+            <TextView
+                android:id="@+id/txt_every_km_above_12_kms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/every_km_above_12_kms"
+                android:textColor="#686868"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:fontFamily="@font/sora_regular"
+                android:layout_marginTop="@dimen/_19sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_every_km_from_8_to_12_kms"
+                app:layout_constraintStart_toStartOf="@id/txt_earning_per_km"/>
+
+
+            <TextView
+                android:id="@+id/txt_7_5_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_7_5_km"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:textFontWeight="400"
+                android:textColor="#686868"
+                android:fontFamily="@font/sora_regular"
+                app:layout_constraintTop_toTopOf="@id/txt_every_km_above_12_kms"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs20"/>
+
+
+            <View
+                android:id="@+id/view_price_per"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layerType="software"
+                android:background="@drawable/dotted_drawable"
+                android:layout_marginTop="@dimen/_17sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_every_km_above_12_kms"
+                app:layout_constraintStart_toStartOf="@id/txt_base_fare"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs16"/>
+
+
+            <TextView
+                android:id="@+id/txt_price_per_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_per_minute"
+                android:textColor="#151515"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="@font/sora_regular"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintStart_toStartOf="@id/txt_every_km_above_12_kms"
+                app:layout_constraintTop_toBottomOf="@id/view_price_per"/>
+
+
+          <TextView
+                android:id="@+id/txt_Rs_0_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_8"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textFontWeight="400"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sora_regular"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs16"
+                app:layout_constraintTop_toTopOf="@id/txt_price_per_minute"/>
+
+
+
+            <View
+                android:id="@+id/view_Platform_Charges"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layerType="software"
+                android:background="@drawable/dotted_drawable"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_price_per_minute"
+                app:layout_constraintStart_toStartOf="@id/txt_base_fare"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs16"/>
+
+
+            <TextView
+                android:id="@+id/txt_platform_charges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/platform_charges"
+                android:textColor="#151515"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="@font/sora_regular"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintStart_toStartOf="@id/txt_every_km_above_12_kms"
+                app:layout_constraintTop_toBottomOf="@id/view_Platform_Charges"/>
+
+
+
+            <TextView
+                android:id="@+id/txt_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_18"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textFontWeight="400"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sora_regular"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs16"
+                app:layout_constraintTop_toTopOf="@id/txt_platform_charges"/>
+
+
+            <View
+                android:id="@+id/view_pick_up_extra"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layerType="software"
+                android:background="@drawable/dotted_drawable"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintTop_toBottomOf="@id/txt_platform_charges"
+                app:layout_constraintStart_toStartOf="@id/txt_base_fare"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs16"/>
+
+
+
+            <TextView
+                android:id="@+id/txt_pickup_extra_km"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pickup_extra_km_fare_post_2_km_max_12"
+                android:textColor="#151515"
+                android:textFontWeight="400"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="@font/sora_regular"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                app:layout_constraintEnd_toStartOf="@id/txt_4km"
+                app:layout_constraintStart_toStartOf="@id/txt_every_km_above_12_kms"
+                app:layout_constraintTop_toBottomOf="@id/view_pick_up_extra"/>
+
+
+            <TextView
+                android:id="@+id/txt_4km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_km"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textFontWeight="400"
+                android:textColor="@color/black"
+                android:fontFamily="@font/sora_regular"
+                app:layout_constraintEnd_toEndOf="@id/txt_rs16"
+                app:layout_constraintTop_toTopOf="@id/txt_pickup_extra_km"/>
+
+
+
+            <TextView
+                android:id="@+id/txt_more_info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/more_info_drawable"
+                android:text="@string/more_info"
+                android:textColor="#0F6FB5"
+                android:textFontWeight="400"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="@font/sora_regular"
+                app:layout_constraintTop_toBottomOf="@id/txt_pickup_extra_km"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
