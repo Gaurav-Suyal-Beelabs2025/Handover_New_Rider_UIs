@@ -12,7 +12,6 @@
     <string name="guidelines_for_doing_orders">Guidelines for doing orders</string>
     <string name="incentives_amp_bonus"><![CDATA[Incentives & Bonus]]></string>
     <string name="filter">Filter</string>
-    =======
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="my_profile">My Profile</string>
@@ -32,7 +31,6 @@
     <string name="your_services">Your Services</string>
     <string name="language_settings">Language Settings</string>
     <string name="vehicle_details">Vehicle Details</string>
-<<<<<<< HEAD
     <string name="verified">Verified</string>
     <string name="mobile_no">Mobile No.</string>
     <string name="_9932586952">9932586952</string>
@@ -43,7 +41,6 @@
     <string name="update_new">Update New</string>
     <string name="share">Share</string>
     <string name="view_declaration">View declaration</string>
-    <string name="rate_card">Rate Card</string>
     <string name="zone">Zone</string>
     <string name="payout">Payout</string>
     <string name="payout_for_00_00am_23_59_pm">Payout for 00:00AM- 23:59 PM</string>
@@ -80,7 +77,19 @@
     <string name="cleanliness_and_hygiene">Cleanliness and Hygiene</string>
     <string name="maintain_cleanliness_and_groom_yourself">-Maintain cleanliness and groom yourself.</string>
     <string name="note_you_will_be_deactivated_if_you_fail_to_adhere_to_the_above_guidelines">Note: You will be deactivated if you fail to adhere to the above guidelines.</string>
-=======
-    >>>>>>> efd1a61acd083a73787e4eb6e10b9d6a62c35f8c
->>>>>>> 8af0a9584e069ac6ae3d7587faca7a24eb21f166
+    <string name="want_to_know_more_about_payments">Want to know more about Payments?</string>
+    <string name="_1_base_fare">1. Base Fare:</string>
+    <string name="the_base_amount_upon_which_distance_fare_and_time_fare_is_added_for_every_order_you_will_receive_base_fare_ride_distance_price_per_km_ride_time_price_per_min">The base amount upon which distance fare and time fare is added. For every order you will receive Base fare+ ride distance*Price per km + ride time * Price per min</string>
+    <string name="_2_minimum_fare">2. Minimum Fare:</string>
+    <string name="the_minimum_amount_you_would_receive_per_order">The minimum amount you would receive per order.</string>
+    <string name="_3_price_per_minute">3. Price per minute</string>
+    <string name="the_ride_time_amount_earned_per_minute">The ride time amount earned per minute.</string>
+    <string name="_4_platform_charges">4. Platform Charges:</string>
+    <string name="amount_you_would_be_charged_per_order_for_handover_services">Amount you would be charged per order for handover services.</string>
+     <string name="extra_amount_you_would_receive_if_pickup_distance_exceed_2_km_you_will_be_paid_extra_only_for_the_distance_travelled_beyond_2_km">Extra amount you would receive if pickup distance exceed 2 km. You will be paid extra only for the distance travelled beyond 2 km.</string>
+    <string name="_5_pickup_extra_km_fare_post_2_km_max_12"><font color="#000000"> 5. Pickup Extra Km Fare post 2 km </font><font color="#686868">(Max ₹12):</font></string>
+    <string name="you_will_be_paid_only_as_per_the_route_given_by_rapido">You will be paid only as per the route given by Rapido.</string>
+    <string name="you_might_not_receive_the_bonus_amount_if_you_are_involved_in_any_fraud_and_additionally_you_will_be_penalized">You might not receive the bonus amount if you are involved in any fraud, and additionally you will be penalized.</string>
+    <string name="rider_denied_duties_cancellations_asking_the_customers_for_extra_cash_are_strictly_not_acceptable">Rider denied duties, cancellations, asking the customers for extra cash are strictly not acceptable.</string>
+
 </resources>

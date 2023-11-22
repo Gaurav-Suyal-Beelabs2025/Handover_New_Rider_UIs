@@ -53,6 +53,7 @@
             android:fontFamily="@font/sora_medium"
             android:paddingVertical="@dimen/_15sdp"
             android:text="Today"
+            android:gravity="center"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="16sp" />
@@ -68,6 +69,7 @@
             android:fontFamily="@font/sora_medium"
             android:paddingVertical="@dimen/_15sdp"
             android:text="history"
+            android:gravity="center"
             android:textAlignment="center"
             android:textColor="#686868"
             android:textSize="16sp" />
@@ -375,11 +377,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_13sdp"
-            android:tint="@color/blue"
             app:layout_constraintBottom_toBottomOf="@+id/enr_moneytxt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/enr_moneytxt"
-            app:srcCompat="@drawable/next_btn" />
+            app:srcCompat="@drawable/next_btn"
+            app:tint="#1173BA" />
 
 
     </android.support.constraint.ConstraintLayout>
@@ -477,7 +479,7 @@
     </android.support.constraint.ConstraintLayout>
 </android.support.v4.widget.NestedScrollView>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem="@layout/item_collention_fare"

@@ -24,8 +24,7 @@ class Profile_Fragment : Fragment() {
           val handover_id_card=view.findViewById<ConstraintLayout>(R.id.layout_handover_id_card)
           val rate_card=view.findViewById<ConstraintLayout>(R.id.layout_documents_amp_details)
           val guidelines=view.findViewById<ConstraintLayout>(R.id.layout_my_performance)
-
-         handover_id_card.setOnClickListener {
+          handover_id_card.setOnClickListener {
 
              Navigation.findNavController(view).navigate(R.id.handover_id_cardFragment)
 
@@ -44,6 +43,8 @@ class Profile_Fragment : Fragment() {
             Navigation.findNavController(view).navigate(R.id.guidelines_Fragment)
 
         }
+
+
 
         return view
     }
