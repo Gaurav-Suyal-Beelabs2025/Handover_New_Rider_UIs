@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">HandoverNewRiderUIs</string>
+
+    <string name="earnings">Earnings</string>
+    <string name="history">History</string>
+    <string name="delivered">Delivered</string>
+    <string name="skipped">Skipped</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="total_earning">Total Earning</string>
+    <string name="check_your_payment_structure">Check your payment structure</string>
+    <string name="rate_card">Rate Card</string>
+    <string name="guidelines_for_doing_orders">Guidelines for doing orders</string>
+    <string name="incentives_amp_bonus"><![CDATA[Incentives & Bonus]]></string>
+    <string name="filter">Filter</string>
+    =======
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="my_profile">My Profile</string>
@@ -19,6 +32,7 @@
     <string name="your_services">Your Services</string>
     <string name="language_settings">Language Settings</string>
     <string name="vehicle_details">Vehicle Details</string>
+<<<<<<< HEAD
     <string name="verified">Verified</string>
     <string name="mobile_no">Mobile No.</string>
     <string name="_9932586952">9932586952</string>
@@ -66,4 +80,7 @@
     <string name="cleanliness_and_hygiene">Cleanliness and Hygiene</string>
     <string name="maintain_cleanliness_and_groom_yourself">-Maintain cleanliness and groom yourself.</string>
     <string name="note_you_will_be_deactivated_if_you_fail_to_adhere_to_the_above_guidelines">Note: You will be deactivated if you fail to adhere to the above guidelines.</string>
+=======
+    >>>>>>> efd1a61acd083a73787e4eb6e10b9d6a62c35f8c
+>>>>>>> 8af0a9584e069ac6ae3d7587faca7a24eb21f166
 </resources>

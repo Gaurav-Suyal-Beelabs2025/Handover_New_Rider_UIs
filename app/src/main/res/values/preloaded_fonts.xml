@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+
+        <item>@font/inter</item>
+        <item>@font/sora</item>
+        <item>@font/sora_medium</item>
+=======
         <item>@font/sora_bold</item>
         <item>@font/sora_medium</item>
         <item>@font/sora_regular</item>
         <item>@font/sora_semibold</item>
+>>>>>>> efd1a61acd083a73787e4eb6e10b9d6a62c35f8c
     </array>
 </resources>

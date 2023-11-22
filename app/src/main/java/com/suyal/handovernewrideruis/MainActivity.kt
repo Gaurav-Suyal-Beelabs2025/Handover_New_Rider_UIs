@@ -1,15 +1,23 @@
 package com.suyal.handovernewrideruis
 import android.os.Bundle
+<<<<<<< HEAD
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+=======
+import com.suyal.handovernewrideruis.databinding.ActivityMainBinding
+>>>>>>> 8af0a9584e069ac6ae3d7587faca7a24eb21f166
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var binding : ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+<<<<<<< HEAD
         setContentView(R.layout.activity_main)
 
 
@@ -44,6 +52,11 @@ class MainActivity : AppCompatActivity() {
                 bottomNavigationView.visibility=View.VISIBLE
             }
         }
+=======
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+>>>>>>> 8af0a9584e069ac6ae3d7587faca7a24eb21f166
     }
 
 }

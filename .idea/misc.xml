@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/base_fare_drawable.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/buttom_logout_drawable.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/dotted_drawable.xml" value="0.202" />
@@ -26,6 +27,20 @@
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_profile_.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_rate__card_.xml" value="0.176" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/menu/nav_menu.xml" value="0.24895833333333334" />
+=======
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/drabale_incentives_bonus.xml" value="0.1895" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/drawable_filter.xml" value="0.1875" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/drawable_radies.xml" value="0.1895" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/drawable_radio_btn.xml" value="0.1895" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/money_icon.xml" value="0.2195" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/font/font.xml" value="0.2791666666666667" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/font/font_family.xml" value="0.22905982905982905" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/font/sora.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_earning.xml" value="0.25" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_my__profile_.xml" value="0.25" />
+        <entry key="..\:/Users/saura/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/item_collention_fare.xml" value="0.5282854656222803" />
+>>>>>>> 8af0a9584e069ac6ae3d7587faca7a24eb21f166
       </map>
     </option>
   </component>
