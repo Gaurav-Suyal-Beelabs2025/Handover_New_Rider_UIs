@@ -8,30 +8,28 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.Navigation
 
-class Handover_id_cardFragment : Fragment() {
-
+class Language_Settings_Fragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view= inflater.inflate(R.layout.fragment_handover_id_card, container, false)
+        val view= inflater.inflate(R.layout.fragment_language__settings_, container, false)
 
-
-         val arrow_back=view.findViewById<ImageView>(R.id.ic_arrow_back)
-
-
-           arrow_back.setOnClickListener {
-
-               Navigation.findNavController(view).navigate(R.id.profile_Fragment)
-
-           }
+    val back_button=view.findViewById<ImageView>(R.id.back_btn)
 
 
 
-    return view
+        back_button.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.profile_Fragment)
+
+        }
+
+
+
+        return view
     }
-
 
 }

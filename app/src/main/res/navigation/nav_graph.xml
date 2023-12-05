@@ -15,7 +15,12 @@
         android:id="@+id/earning_Fragment"
         android:name="com.suyal.handovernewrideruis.Earning_Fragment"
         android:label="fragment_earning_"
-        tools:layout="@layout/fragment_earning_" />
+        tools:layout="@layout/fragment_earning_" >
+
+        <action
+            android:id="@+id/action_earning_Fragment_to_rate_Card_Fragment2"
+            app:destination="@id/rate_Card_Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/payout_Fragment"
         android:name="com.suyal.handovernewrideruis.Payout_Fragment"
@@ -29,39 +34,85 @@
         <action
             android:id="@+id/action_profile_Fragment_to_handover_id_cardFragment"
             app:destination="@id/handover_id_cardFragment" />
-        <action
-            android:id="@+id/action_profile_Fragment_to_rate_Card_Fragment"
-            app:destination="@id/rate_Card_Fragment" />
+
         <action
             android:id="@+id/action_profile_Fragment_to_guidelines_Fragment"
             app:destination="@id/guidelines_Fragment" />
+        <action
+            android:id="@+id/action_profile_Fragment_to_documents_DetailsFragment"
+            app:destination="@id/documents_DetailsFragment" />
+        <action
+            android:id="@+id/action_profile_Fragment_to_selfi_Fragment"
+            app:destination="@id/selfi_Fragment" />
+        <action
+            android:id="@+id/action_profile_Fragment_to_language_Settings_Fragment"
+            app:destination="@id/language_Settings_Fragment" />
 
     </fragment>
     <fragment
         android:id="@+id/handover_id_cardFragment"
         android:name="com.suyal.handovernewrideruis.Handover_id_cardFragment"
         android:label="fragment_handover_id_card"
-        tools:layout="@layout/fragment_handover_id_card" />
+        tools:layout="@layout/fragment_handover_id_card" >
+        <action
+            android:id="@+id/action_handover_id_cardFragment_to_profile_Fragment"
+            app:destination="@id/profile_Fragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/guidelines_Fragment"
+        android:name="com.suyal.handovernewrideruis.Guidelines_Fragment"
+        android:label="fragment_guidelines_"
+        tools:layout="@layout/fragment_guidelines_" >
+        <action
+            android:id="@+id/action_guidelines_Fragment_to_profile_Fragment"
+            app:destination="@id/profile_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/want_to_know_bottomsheet"
+        android:name="com.suyal.handovernewrideruis.Want_to_know_bottomsheet"
+        android:label="fragment_want_to_know_bottomsheet"
+        tools:layout="@layout/fragment_want_to_know_bottomsheet" />
     <fragment
         android:id="@+id/rate_Card_Fragment"
         android:name="com.suyal.handovernewrideruis.Rate_Card_Fragment"
         android:label="fragment_rate__card_"
         tools:layout="@layout/fragment_rate__card_" >
         <action
-            android:id="@+id/action_rate_Card_Fragment_to_want_to_know_bottomsheet2"
+            android:id="@+id/action_rate_Card_Fragment_to_want_to_know_bottomsheet"
             app:destination="@id/want_to_know_bottomsheet" />
+        <action
+            android:id="@+id/action_rate_Card_Fragment_to_earning_Fragment"
+            app:destination="@id/earning_Fragment" />
     </fragment>
-
     <fragment
-        android:id="@+id/guidelines_Fragment"
-        android:name="com.suyal.handovernewrideruis.Guidelines_Fragment"
-        android:label="fragment_guidelines_"
-        tools:layout="@layout/fragment_guidelines_" />
+        android:id="@+id/documents_DetailsFragment"
+        android:name="com.suyal.handovernewrideruis.Documents_DetailsFragment"
+        android:label="fragment_documents__details"
+        tools:layout="@layout/fragment_documents__details" >
+        <action
+            android:id="@+id/action_documents_DetailsFragment_to_profile_Fragment"
+            app:destination="@id/profile_Fragment" />
+    </fragment>
     <fragment
-        android:id="@+id/want_to_know_bottomsheet"
-        android:name="com.suyal.handovernewrideruis.Want_to_know_bottomsheet"
-        android:label="fragment_want_to_know_bottomsheet"
-        tools:layout="@layout/fragment_want_to_know_bottomsheet" />
+        android:id="@+id/selfi_Fragment"
+        android:name="com.suyal.handovernewrideruis.Selfi_Fragment"
+        android:label="fragment_selfi_"
+        tools:layout="@layout/fragment_selfi_" >
+        <action
+            android:id="@+id/action_selfi_Fragment_to_profile_Fragment"
+            app:destination="@id/profile_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/language_Settings_Fragment"
+        android:name="com.suyal.handovernewrideruis.Language_Settings_Fragment"
+        android:label="fragment_language__settings_"
+        tools:layout="@layout/fragment_language__settings_" >
+        <action
+            android:id="@+id/action_language_Settings_Fragment_to_profile_Fragment"
+            app:destination="@id/profile_Fragment" />
+    </fragment>
 
 
 </navigation>

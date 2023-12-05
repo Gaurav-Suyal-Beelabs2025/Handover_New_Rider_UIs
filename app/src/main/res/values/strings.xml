@@ -86,10 +86,39 @@
     <string name="the_ride_time_amount_earned_per_minute">The ride time amount earned per minute.</string>
     <string name="_4_platform_charges">4. Platform Charges:</string>
     <string name="amount_you_would_be_charged_per_order_for_handover_services">Amount you would be charged per order for handover services.</string>
-     <string name="extra_amount_you_would_receive_if_pickup_distance_exceed_2_km_you_will_be_paid_extra_only_for_the_distance_travelled_beyond_2_km">Extra amount you would receive if pickup distance exceed 2 km. You will be paid extra only for the distance travelled beyond 2 km.</string>
+    <string name="extra_amount_you_would_receive_if_pickup_distance_exceed_2_km_you_will_be_paid_extra_only_for_the_distance_travelled_beyond_2_km">Extra amount you would receive if pickup distance exceed 2 km. You will be paid extra only for the distance travelled beyond 2 km.</string>
     <string name="_5_pickup_extra_km_fare_post_2_km_max_12"><font color="#000000"> 5. Pickup Extra Km Fare post 2 km </font><font color="#686868">(Max ₹12):</font></string>
     <string name="you_will_be_paid_only_as_per_the_route_given_by_rapido">You will be paid only as per the route given by Rapido.</string>
     <string name="you_might_not_receive_the_bonus_amount_if_you_are_involved_in_any_fraud_and_additionally_you_will_be_penalized">You might not receive the bonus amount if you are involved in any fraud, and additionally you will be penalized.</string>
     <string name="rider_denied_duties_cancellations_asking_the_customers_for_extra_cash_are_strictly_not_acceptable">Rider denied duties, cancellations, asking the customers for extra cash are strictly not acceptable.</string>
+    <string name="ok_got_it">Ok, Got It</string>
+    <string name="documents_details">Documents &amp; Details</string>
+    <string name="driving_license">Driving License</string>
+    <string name="aadhar">Aadhar</string>
+    <string name="address">Address</string>
+    <string name="app_language">App Language</string>
+    <string name="set_the_language_for_your_app">Set the language for your app</string>
+    <string name="notification_language">Notification Language</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="package_details">Package Details</string>
+     <string name="package_weight"><font coler="#000000">Select Package Weight</font><font color="#686868">*</font></string>
+    <string name="package_includes"><font coler="#000000">Does Package Includes</font><font color="#686868">*</font></string>
+    <string name="cake">Cake</string>
+    <string name="ice_cream">Ice Cream</string>
+    <string name="tea">Tea</string>
+    <string name="order_value"><font coler="#000000">Order Value</font><font color="#686868">*</font></string>
+    <string name="enter_order_value">Enter Order Value</string>
+    <string name="collect_payment_for_order">Collect Payment for Order</string>
+    <string name="add_photos_of_package"><font coler="#000000"><b>Add package photos</b></font><font color="#686868"><font size="8">(Optional)</font></font></string>
+    <string name="eg_laundry_food_boxes_etc">Eg. Laundry, Food boxes, etc.</string>
+    <string name="submit">Submit</string>
+    <string name="select_package_category"><font coler="#000000">Select Package Category</font><font color="#686868">*</font></string>
+
+
+
+    <string name="splash_screen"><font color="#0000000"> <b>No monthly fixed cost</b>  of </font><font color="#000000"> \n    delivery person &amp;vehicle.</font></string>
+
+
+
 
 </resources>

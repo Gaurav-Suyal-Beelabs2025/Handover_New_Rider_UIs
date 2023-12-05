@@ -8,7 +8,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.Navigation
 
-class Handover_id_cardFragment : Fragment() {
+
+class Documents_DetailsFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -16,22 +17,24 @@ class Handover_id_cardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view= inflater.inflate(R.layout.fragment_handover_id_card, container, false)
+        val view= inflater.inflate(R.layout.fragment_documents__details, container, false)
 
 
-         val arrow_back=view.findViewById<ImageView>(R.id.ic_arrow_back)
-
-
-           arrow_back.setOnClickListener {
-
-               Navigation.findNavController(view).navigate(R.id.profile_Fragment)
-
-           }
+        val arrow_back=view.findViewById<ImageView>(R.id.back_btn)
 
 
 
-    return view
+        arrow_back.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.profile_Fragment)
+
+        }
+
+
+        return view
     }
+
+
 
 
 }

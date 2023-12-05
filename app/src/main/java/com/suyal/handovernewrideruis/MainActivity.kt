@@ -45,6 +45,14 @@ class MainActivity : AppCompatActivity() {
                 bottomNavigationView.visibility=View.GONE
             }
 
+            else if (destination.id==R.id.documents_DetailsFragment){
+                bottomNavigationView.visibility=View.GONE
+            }
+
+            else if (destination.id==R.id.selfi_Fragment){
+                bottomNavigationView.visibility=View.GONE
+            }
+
 
 
             else{

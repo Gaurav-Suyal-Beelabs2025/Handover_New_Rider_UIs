@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.navigation.Navigation
 
 class Earning_Fragment : Fragment() {
 
@@ -15,7 +17,30 @@ class Earning_Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_earning_, container, false)
+        val view= inflater.inflate(R.layout.fragment_earning_, container, false)
+
+
+
+      val rate_card = view.findViewById<ConstraintLayout>(R.id.ern_cons2)
+
+
+        rate_card.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.rate_Card_Fragment)
+
+
+        }
+
+
+
+
+
+
+
+    return view
     }
+
+
+
 
 }

@@ -308,7 +308,7 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:background="@drawable/got_it_button"
-          android:text="Ok, Got It"
+          android:text="@string/ok_got_it"
           android:textColor="@color/white"
           android:textAllCaps="false"
           android:textFontWeight="700"
@@ -330,6 +330,8 @@
 
 
       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     </androidx.core.widget.NestedScrollView>
 
 

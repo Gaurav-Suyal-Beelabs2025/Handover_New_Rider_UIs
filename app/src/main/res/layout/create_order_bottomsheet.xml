@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/package_details_drawable">
+
+        <ImageView
+            android:id="@+id/ic_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ic_line">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:id="@+id/txt_package_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/package_details"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textSize="22sp"
+            android:fontFamily="@font/inter_bold"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_package_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/package_weight_drawable"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            app:layout_constraintTop_toBottomOf="@id/txt_package_details">
+
+            <TextView
+                android:id="@+id/txt_package_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_package_category"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_14sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                app:tint="#676767"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_19sdp"
+                app:layout_constraintTop_toTopOf="@id/txt_package_category"
+                app:layout_constraintBottom_toBottomOf="@id/txt_package_category"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_package_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/package_weight_drawable"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            app:layout_constraintTop_toBottomOf="@id/layout_package_category">
+
+            <TextView
+                android:id="@+id/txt_package_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/package_weight"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_regular"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_14sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                app:tint="#676767"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_19sdp"
+                app:layout_constraintTop_toTopOf="@id/txt_package_weight"
+                app:layout_constraintBottom_toBottomOf="@id/txt_package_weight"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_package_includes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/package_weight_drawable"
+            android:layout_marginTop="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="@id/layout_package_weight"
+            app:layout_constraintEnd_toEndOf="@id/layout_package_weight"
+            app:layout_constraintTop_toBottomOf="@id/layout_package_weight">
+
+
+            <TextView
+                android:id="@+id/txt_package_includes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/package_includes"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textFontWeight="600"
+                android:fontFamily="@font/inter_semibold"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_28sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_package_includes"
+                    app:layout_constraintStart_toStartOf="@id/txt_package_includes"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_cake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cake"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:checked="true"
+                        android:layout_weight="1"
+                        android:textFontWeight="400"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/custom_radio_button_background"
+                        android:textColor="@drawable/selected_text_coler"
+                        android:paddingVertical="@dimen/_7sdp"
+                        android:fontFamily="@font/inter_regular" />
+
+                    <RadioButton
+                        android:id="@+id/radio_ice_cream"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ice_cream"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:textFontWeight="400"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/custom_radio_button_background"
+                        android:textColor="@drawable/selected_text_coler"
+                        android:paddingVertical="@dimen/_7sdp"
+                        android:fontFamily="@font/inter_regular" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio_tea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tea"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:checked="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/custom_radio_button_background"
+                        android:textColor="@drawable/selected_text_coler"
+                        android:paddingVertical="@dimen/_7sdp"
+                        android:textFontWeight="400"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_weight="1" />
+
+
+
+                </RadioGroup>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_order_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/package_weight_drawable"
+            android:layout_marginTop="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="@id/layout_package_includes"
+            app:layout_constraintEnd_toEndOf="@id/layout_package_includes"
+            app:layout_constraintTop_toBottomOf="@id/layout_package_includes">
+
+            <TextView
+                android:id="@+id/txt_order_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_value"
+                android:textFontWeight="600"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/inter_semibold"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_11sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <EditText
+                android:id="@+id/edit_text_enter_order_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/enter_order_value_drawable"
+                android:hint="@string/enter_order_value"
+                android:textColorHint="#90A2AF"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="#90A2AF"
+                android:textFontWeight="400"
+                android:singleLine="true"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginHorizontal="@dimen/_11sdp"
+                android:fontFamily="@font/inter_regular"
+                app:layout_constraintTop_toBottomOf="@id/txt_order_value"/>
+
+            <TextView
+                android:id="@+id/txt_collect_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_payment_for_order"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/inter_regular"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_text_enter_order_value"
+                app:layout_constraintStart_toStartOf="@id/edit_text_enter_order_value"/>
+
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/ic_info"
+                  android:layout_marginStart="@dimen/_3sdp"
+                  app:layout_constraintTop_toTopOf="@id/txt_collect_payment"
+                  app:layout_constraintBottom_toBottomOf="@id/txt_collect_payment"
+                  app:layout_constraintStart_toEndOf="@id/txt_collect_payment"/>
+
+
+
+              <Switch
+                  android:id="@+id/switch_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:layout_constraintTop_toTopOf="@id/txt_collect_payment"
+                  app:layout_constraintBottom_toBottomOf="@id/txt_collect_payment"
+                  app:layout_constraintEnd_toEndOf="@id/edit_text_enter_order_value"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_add_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/enter_order_value_drawable"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@id/layout_order_value"
+            app:layout_constraintEnd_toEndOf="@id/layout_order_value"
+            app:layout_constraintTop_toBottomOf="@id/layout_order_value">
+
+          <ImageView
+              android:id="@+id/ic_camera"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/icon_camera"
+              android:layout_marginStart="@dimen/_15sdp"
+              android:layout_marginVertical="@dimen/_15sdp"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/txt_add_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_photos_of_package"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textFontWeight="600"
+                android:textColor="#262626"
+                android:fontFamily="@font/inter_semibold"
+                android:layout_marginStart="@dimen/_11sdp"
+                app:layout_constraintTop_toTopOf="@id/ic_camera"
+                app:layout_constraintStart_toEndOf="@id/ic_camera"/>
+
+
+            <TextView
+                android:id="@+id/txt_laundry_food_boxes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eg_laundry_food_boxes_etc"
+                android:textColor="#686868"
+                android:textFontWeight="400"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/inter_regular"
+                app:layout_constraintBottom_toBottomOf="@id/ic_camera"
+                app:layout_constraintStart_toStartOf="@id/txt_add_photos"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:tint="#686868"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/txt_add_photos"
+                app:layout_constraintBottom_toBottomOf="@id/txt_laundry_food_boxes"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submit_button"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textFontWeight="600"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:paddingVertical="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/layout_add_photo"
+            app:layout_constraintEnd_toEndOf="@id/layout_add_photo"
+            app:layout_constraintTop_toBottomOf="@id/layout_add_photo"/>
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
