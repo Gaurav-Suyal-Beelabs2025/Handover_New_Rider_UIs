@@ -117,8 +117,9 @@
 
 
     <string name="splash_screen"><font color="#0000000"> <b>No monthly fixed cost</b>  of </font><font color="#000000"> \n    delivery person &amp;vehicle.</font></string>
-
-
+    <string name="add_package_photos">Add Package Photos</string>
+    <string name="maximum_5_photos">Maximum 5 photos</string>
+    <string name="uploaded_photos_of_package">Uploaded photos of package</string>
 
 
 </resources>

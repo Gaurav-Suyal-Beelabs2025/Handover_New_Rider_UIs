@@ -73,7 +73,7 @@ class Profile_Fragment : Fragment() {
                 set_image = view.findViewById<ImageView>(R.id.image_3)
                val lanuage_setting=view.findViewById<ConstraintLayout>(R.id.layout_language_settings)
                val your_service=view.findViewById<ConstraintLayout>(R.id.layout_your_services)
-
+               val vechile_details=view.findViewById<ConstraintLayout>(R.id.layout_vehicle_details)
                 lanuage_setting.setOnClickListener {
 
                     Navigation.findNavController(view).navigate(R.id.language_Settings_Fragment)
@@ -100,6 +100,18 @@ class Profile_Fragment : Fragment() {
 
                 }
 
+
+
+                vechile_details.setOnClickListener {
+
+                    val dialog = BottomSheetDialog(requireActivity())
+                    val view = layoutInflater.inflate(R.layout.add_package_photo, null)
+
+                    dialog.setCancelable(true)
+                    dialog.setContentView(view)
+                    dialog.show()
+
+                }
 
                your_service.setOnClickListener {
 
