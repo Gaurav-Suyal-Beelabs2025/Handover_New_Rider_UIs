@@ -7,4 +7,9 @@
         <item name="colorAccent">#32A969</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+    <style name="TransparentBottomSheetDialog" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 </resources>

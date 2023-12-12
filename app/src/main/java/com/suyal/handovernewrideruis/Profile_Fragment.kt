@@ -14,6 +14,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
@@ -30,6 +31,7 @@ class Profile_Fragment : Fragment() {
     lateinit var camera: ImageView ;
     private var imageUri: Uri? = null
     val Fragment.packageManager get() = activity?.packageManager
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -74,6 +76,11 @@ class Profile_Fragment : Fragment() {
                val lanuage_setting=view.findViewById<ConstraintLayout>(R.id.layout_language_settings)
                val your_service=view.findViewById<ConstraintLayout>(R.id.layout_your_services)
                val vechile_details=view.findViewById<ConstraintLayout>(R.id.layout_vehicle_details)
+
+
+                var set_image= getArguments()?.getString("uri");
+
+
                 lanuage_setting.setOnClickListener {
 
                     Navigation.findNavController(view).navigate(R.id.language_Settings_Fragment)
@@ -168,6 +175,7 @@ class Profile_Fragment : Fragment() {
                     val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
                     startActivityForResult(takePictureIntent, REQUEST_CODE)
                     dialog.dismiss()
+
 
                 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -85,12 +85,12 @@
         android:layout_marginTop="@dimen/_11sdp"
         android:background="#DEDEDE"
         app:layout_constraintTop_toBottomOf="@+id/ern_radioGroup1" />
-<android.support.v4.widget.NestedScrollView
+<androidx.core.widget.NestedScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/nested"
     app:layout_constraintTop_toBottomOf="@id/ern_view1">
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -227,7 +227,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/ern_moneyicon"
         app:layout_constraintStart_toStartOf="@+id/ern_rupyatxt" />
 
-        <android.support.constraint.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
 
             android:id="@+id/ern_cons2"
             android:layout_width="match_parent"
@@ -287,7 +287,7 @@
                 app:srcCompat="@drawable/next_btn" />
 
 
-        </android.support.constraint.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
         android:id="@+id/ern_txtguidline"
@@ -323,7 +323,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ern_txtlearn" />
 
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ern_cons3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -384,7 +384,7 @@
             app:tint="#1173BA" />
 
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/ern_tran_histxt"
@@ -399,7 +399,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ern_cons3" />
 
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ern_cons4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -436,10 +436,10 @@
             app:layout_constraintTop_toTopOf="@+id/ern_filtericon" />
 
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ern_cons5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -475,9 +475,9 @@
             app:layout_constraintStart_toEndOf="@+id/ern_transaction"
             app:layout_constraintTop_toTopOf="@+id/ern_transaction" />
 
-    </android.support.constraint.ConstraintLayout>
-    </android.support.constraint.ConstraintLayout>
-</android.support.v4.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
@@ -488,5 +488,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nested" />
 
-        </android.support.constraint.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
