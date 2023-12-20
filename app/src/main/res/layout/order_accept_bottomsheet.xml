@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/new_order_buttomsheet"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_new_order_arrived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:fontFamily="@font/sora_semibold"
+                    android:text="@string/new_order_arrived"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textFontWeight="600"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/ic_speacker"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/layout_Earnning_Distance_Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/earning_distance_type_drawable"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/txt_new_order_arrived">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/ic_currency"
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_11sdp"
+                            android:src="@drawable/ic_currency_rupee"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txt_earning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:fontFamily="@font/sora_regular"
+                            android:text="@string/earning_42_16"
+                            android:textAllCaps="false"
+                            android:textFontWeight="400"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/ic_currency"
+                            app:layout_constraintTop_toBottomOf="@id/ic_currency" />
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="0dp"
+                            android:background="#DEDEDE"
+                            app:layout_constraintBottom_toBottomOf="@+id/txt_earning"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/ic_currency" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/ic_location"
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_11sdp"
+                            android:src="@drawable/ic_location_newrider"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txt_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:fontFamily="@font/sora_regular"
+                            android:text="@string/distance_3_82km"
+                            android:textAllCaps="false"
+                            android:textFontWeight="400"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/ic_location"
+                            app:layout_constraintTop_toBottomOf="@id/ic_location" />
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="0dp"
+                            android:background="#DEDEDE"
+                            app:layout_constraintBottom_toBottomOf="@+id/txt_distance"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/ic_location" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/ic_currency3"
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_11sdp"
+                            android:src="@drawable/img_scooter"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:fontFamily="@font/sora_regular"
+                            android:text="@string/type_bike"
+                            android:textAllCaps="false"
+                            android:textFontWeight="400"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/ic_currency3"
+                            app:layout_constraintTop_toBottomOf="@id/ic_currency3" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_food_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_19sdp"
+                    android:fontFamily="@font/sora_regular"
+                    android:text="@string/food_delivery"
+                    android:textAllCaps="false"
+                    android:textColor="#151515"
+                    android:textFontWeight="400"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_Earnning_Distance_Type" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:background="#DEDEDE"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_food_delivery"
+                    app:layout_constraintEnd_toStartOf="@id/txt_food_delivery"
+                    app:layout_constraintStart_toStartOf="@id/layout_Earnning_Distance_Type"
+                    app:layout_constraintTop_toTopOf="@id/txt_food_delivery" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:background="#DEDEDE"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_food_delivery"
+                    app:layout_constraintEnd_toEndOf="@id/layout_Earnning_Distance_Type"
+                    app:layout_constraintStart_toEndOf="@id/txt_food_delivery"
+                    app:layout_constraintTop_toTopOf="@id/txt_food_delivery" />
+
+
+                <ImageView
+                    android:id="@+id/ic_location_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/ic_location_circle"
+                    app:layout_constraintStart_toStartOf="@id/layout_Earnning_Distance_Type"
+                    app:layout_constraintTop_toBottomOf="@id/txt_food_delivery" />
+
+
+                <TextView
+                    android:id="@+id/txt_pick_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/pick_up"
+                    android:textAllCaps="false"
+                    android:textColor="#0F6FB5"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@id/ic_location_circle"
+                    app:layout_constraintTop_toTopOf="@id/ic_location_circle" />
+
+                <TextView
+                    android:id="@+id/txt_haldiram_s_pvt_ltd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:fontFamily="@font/sora_regular"
+                    android:text="@string/haldiram_s_pvt_ltd"
+                    android:textAllCaps="false"
+                    android:textColor="#151515"
+                    android:textFontWeight="400"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@id/txt_pick_up"
+                    app:layout_constraintTop_toBottomOf="@id/txt_pick_up" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_pick_up_adress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:background="@drawable/adress_drawable"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/txt_haldiram_s_pvt_ltd"
+                    app:layout_constraintTop_toBottomOf="@id/txt_haldiram_s_pvt_ltd">
+
+                    <TextView
+                        android:id="@+id/txt_pick_up_adress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:fontFamily="@font/sora_regular"
+                        android:text="@string/sd_138b_ahinsa_khand_1_jaipuria_service_road_indirapuram_ghaziabad"
+                        android:textAllCaps="false"
+                        android:textColor="#151515"
+                        android:textFontWeight="300"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:fontFamily="@font/sora_regular"
+                    android:text="@string/drop"
+                    android:textAllCaps="false"
+                    android:textColor="#0F6FB5"
+                    android:textFontWeight="400"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@id/txt_pick_up"
+                    app:layout_constraintTop_toBottomOf="@id/layout_pick_up_adress" />
+
+
+                <TextView
+                    android:id="@+id/txt_haldiram_s_pvt_ltd_drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:fontFamily="@font/sora_regular"
+                    android:text="@string/haldiram_s_pvt_ltd"
+                    android:textAllCaps="false"
+                    android:textColor="#151515"
+                    android:textFontWeight="400"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@id/txt_drop"
+                    app:layout_constraintTop_toBottomOf="@id/txt_drop" />
+
+                <ImageView
+                    android:id="@+id/ic_location_circle_drop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location_circle"
+                    app:layout_constraintStart_toStartOf="@id/layout_Earnning_Distance_Type"
+                    app:layout_constraintTop_toTopOf="@id/txt_drop" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_drop_adress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:background="@drawable/adress_drawable"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/txt_haldiram_s_pvt_ltd"
+                    app:layout_constraintTop_toBottomOf="@id/txt_haldiram_s_pvt_ltd_drop">
+
+                    <TextView
+                        android:id="@+id/txt_drop_up_adress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_7sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_7sdp"
+                        android:fontFamily="@font/sora_regular"
+                        android:text="@string/sd_138b_ahinsa_khand_1_jaipuria_service_road_indirapuram_ghaziabad"
+                        android:textAllCaps="false"
+                        android:textColor="#151515"
+                        android:textFontWeight="300"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/skip_button"
+                    android:fontFamily="@font/sora_regular"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_25sdp"
+                    android:paddingVertical="@dimen/_12sdp"
+                    android:text="@string/skip"
+                    android:textAllCaps="false"
+                    android:textColor="#686868"
+                    android:textFontWeight="400"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/ic_location_circle"
+                    app:layout_constraintTop_toBottomOf="@id/layout_drop_adress" />
+
+                <TextView
+                    android:id="@+id/txt_accept"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:background="@drawable/skip_button"
+                    android:backgroundTint="@color/black"
+                    android:gravity="center"
+                    android:text="@string/accept"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textFontWeight="700"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_skip"
+                    app:layout_constraintEnd_toEndOf="@id/layout_drop_adress"
+                    app:layout_constraintStart_toEndOf="@id/txt_skip"
+                    app:layout_constraintTop_toTopOf="@id/txt_skip" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/timmer_drawable"
+                app:layout_constraintTop_toTopOf="@id/layout_main"
+                app:layout_constraintBottom_toTopOf="@id/layout_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/ic_timmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:src="@drawable/ic_timmer"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_mints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/sora_semibold"
+                    android:text="03:29 mins"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textFontWeight="600"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@id/ic_timmer"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ic_timmer"
+                    app:layout_constraintTop_toTopOf="@id/ic_timmer" />
+
+
+                <ProgressBar
+                    android:id="@+id/simpleProgressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/custom_progress"
+                    app:layout_constraintEnd_toEndOf="@+id/txt_mints"
+                    app:layout_constraintStart_toStartOf="@+id/ic_timmer"
+                    app:layout_constraintTop_toBottomOf="@id/txt_mints" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

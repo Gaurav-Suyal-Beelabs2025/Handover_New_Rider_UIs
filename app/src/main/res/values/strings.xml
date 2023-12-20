@@ -114,12 +114,21 @@
     <string name="submit">Submit</string>
     <string name="select_package_category"><font coler="#000000">Select Package Category</font><font color="#686868">*</font></string>
 
-
-
     <string name="splash_screen"><font color="#0000000"> <b>No monthly fixed cost</b>  of </font><font color="#000000"> \n    delivery person &amp;vehicle.</font></string>
     <string name="add_package_photos">Add Package Photos</string>
     <string name="maximum_5_photos">Maximum 5 photos</string>
     <string name="uploaded_photos_of_package">Uploaded photos of package</string>
+    <string name="new_order_arrived">New Order Arrived!</string>
+     <string name="earning_42_16"><font coler="#686868">Earning</font><font color="#0F6FB5">\n₹42.16</font></string>
+    <string name="distance_3_82km"><font coler="#686868">Distance:</font><font color="#0F6FB5">\n3.82km</font></string>
+    <string name="type_bike"><font coler="#686868">Type:     </font><font color="#0F6FB5">\nBike</font></string>
+    <string name="food_delivery">FOOD DELIVERY</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="haldiram_s_pvt_ltd">Haldiram’s PVT LTD</string>
+    <string name="sd_138b_ahinsa_khand_1_jaipuria_service_road_indirapuram_ghaziabad">SD-138B, Ahinsa Khand 1, Jaipuria Service Road, Indirapuram, Ghaziabad</string>
+    <string name="drop">Drop</string>
+    <string name="skip">Skip</string>
+    <string name="accept">Accept</string>
 
 
 </resources>

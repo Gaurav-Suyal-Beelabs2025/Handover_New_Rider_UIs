@@ -112,7 +112,7 @@ class Profile_Fragment : Fragment() {
                 vechile_details.setOnClickListener {
 
                     val dialog = BottomSheetDialog(requireActivity())
-                    val view = layoutInflater.inflate(R.layout.add_package_photo, null)
+                    val view = layoutInflater.inflate(R.layout.order_accept_bottomsheet, null)
 
                     dialog.setCancelable(true)
                     dialog.setContentView(view)
