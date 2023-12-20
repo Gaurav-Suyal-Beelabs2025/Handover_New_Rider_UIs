@@ -225,6 +225,17 @@
                     app:layout_constraintTop_toBottomOf="@id/txt_food_delivery" />
 
 
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"
+                    android:backgroundTint="#DEDEDE"
+                    android:background="@drawable/dotted_line"
+                    app:layout_constraintBottom_toTopOf="@+id/ic_location_circle_drop"
+                    app:layout_constraintEnd_toEndOf="@+id/ic_location_circle_drop"
+                    app:layout_constraintStart_toStartOf="@+id/ic_location_circle"
+                    app:layout_constraintTop_toBottomOf="@+id/ic_location_circle" />
+
+
                 <TextView
                     android:id="@+id/txt_pick_up"
                     android:layout_width="wrap_content"
