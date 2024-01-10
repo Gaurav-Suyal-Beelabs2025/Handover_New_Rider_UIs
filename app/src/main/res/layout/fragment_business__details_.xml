@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/account_verification_verification"
+    tools:context=".Business_Details_Fragment">
+
+
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:elevation="@dimen/_1sdp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:src="@drawable/arrow_back_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/business_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/business_details"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/back_btn"
+        app:layout_constraintStart_toEndOf="@+id/back_btn"
+        app:layout_constraintTop_toBottomOf="@id/back_btn"
+        app:layout_constraintTop_toTopOf="@id/back_btn" />
+
+  </androidx.appcompat.widget.Toolbar>
+
+
+      <ImageView
+          android:id="@+id/img_handover_delivery"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/handover_delivery"
+          app:layout_constraintTop_toBottomOf="@id/toolbar_layout"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border_drawable"
+            app:layout_constraintTop_toBottomOf="@id/img_handover_delivery"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+      <androidx.core.widget.NestedScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+          <TextView
+              android:id="@+id/tv_business_details"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/business_details"
+              android:textColor="#262626"
+              android:textFontWeight="700"
+              android:textSize="24sp"
+              android:textAllCaps="false"
+              android:fontFamily="@font/inter_bold"
+              android:layout_marginTop="@dimen/_15sdp"
+              android:layout_marginStart="@dimen/_15sdp"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintStart_toStartOf="parent"/>
+
+          <TextView
+              android:id="@+id/tv_business_type"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/business_type"
+              android:textColor="#262626"
+              android:textAllCaps="false"
+              android:textSize="16sp"
+              android:textFontWeight="400"
+              android:fontFamily="@font/inter_regular"
+              android:layout_marginTop="@dimen/_10sdp"
+              app:layout_constraintTop_toBottomOf="@id/tv_business_details"
+              app:layout_constraintStart_toStartOf="@id/tv_business_details"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_12sdp"
+                android:entries="@array/company_name"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_business_type"
+                android:background="@drawable/spinner_bacground"/>
+
+
+          <TextView
+              android:id="@+id/tv_business_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/business_name"
+              android:textColor="#262626"
+              android:textAllCaps="false"
+              android:textSize="16sp"
+              android:textFontWeight="400"
+              android:fontFamily="@font/inter_regular"
+              android:layout_marginTop="@dimen/_14sdp"
+              app:layout_constraintTop_toBottomOf="@id/spinner"
+              app:layout_constraintStart_toStartOf="@id/tv_business_details"/>
+
+
+          <EditText
+              android:id="@+id/ET_enter_business_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/enter_mobile_number_drawable"
+              android:hint="@string/enter_business_name"
+              android:textColorHint="#7D8597"
+              android:textFontWeight="400"
+              android:textSize="16sp"
+              android:textAllCaps="false"
+              android:textColor="#7D8597"
+              android:singleLine="true"
+              android:fontFamily="@font/inter_regular"
+              android:paddingVertical="@dimen/_15sdp"
+              android:paddingStart="@dimen/_10sdp"
+              android:paddingEnd="@dimen/_10sdp"
+              android:layout_marginTop="@dimen/_8sdp"
+              android:layout_marginHorizontal="@dimen/_12sdp"
+              app:layout_constraintTop_toBottomOf="@+id/tv_business_name"/>
+
+          <TextView
+              android:id="@+id/tv_brand_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/brand_name"
+              android:textColor="#262626"
+              android:textAllCaps="false"
+              android:textSize="16sp"
+              android:textFontWeight="400"
+              android:fontFamily="@font/inter_regular"
+              android:layout_marginTop="@dimen/_14sdp"
+              app:layout_constraintTop_toBottomOf="@id/ET_enter_business_name"
+              app:layout_constraintStart_toStartOf="@id/tv_business_details"/>
+
+          <EditText
+              android:id="@+id/ET_enter_brand_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/enter_mobile_number_drawable"
+              android:hint="@string/enter_brand_name"
+              android:textColorHint="#7D8597"
+              android:textFontWeight="400"
+              android:textSize="16sp"
+              android:textAllCaps="false"
+              android:textColor="#7D8597"
+              android:singleLine="true"
+              android:fontFamily="@font/inter_regular"
+              android:paddingVertical="@dimen/_15sdp"
+              android:paddingStart="@dimen/_10sdp"
+              android:paddingEnd="@dimen/_10sdp"
+              android:layout_marginTop="@dimen/_8sdp"
+              android:layout_marginHorizontal="@dimen/_12sdp"
+              app:layout_constraintTop_toBottomOf="@+id/tv_brand_name"/>
+
+
+          <TextView
+              android:id="@+id/txt_submit"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginHorizontal="@dimen/_12sdp"
+              android:layout_marginBottom="@dimen/_25sdp"
+              android:background="@drawable/submit_button"
+              android:fontFamily="@font/inter_semibold"
+              android:gravity="center"
+              android:paddingVertical="@dimen/_12sdp"
+              android:text="@string/submit"
+              android:textAllCaps="false"
+              android:textColor="@color/white"
+              android:textFontWeight="600"
+              android:textSize="20sp"
+              android:layout_marginTop="@dimen/_34sdp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/ET_enter_brand_name"
+              tools:layout_editor_absoluteX="14dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+      </androidx.core.widget.NestedScrollView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

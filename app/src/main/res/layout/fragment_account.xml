@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/account_verification_verification"
+    tools:context=".AccountFragment">
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+      <TextView
+          android:id="@+id/txt_handover"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/handover"
+          android:textColor="@color/white"
+          android:textAllCaps="false"
+          android:textSize="20sp"
+          android:textFontWeight="700"
+          android:fontFamily="@font/inter_bold"
+          android:layout_marginTop="@dimen/_15sdp"
+          android:layout_marginStart="@dimen/_15sdp"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"/>
+
+      <ImageView
+          android:id="@+id/img_handover_delivery"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_8sdp"
+          app:layout_constraintTop_toBottomOf="@id/txt_handover"
+          android:background="@drawable/handover_delivery"/>
+
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_marginTop="@dimen/_8sdp"
+          app:layout_constraintTop_toBottomOf="@id/img_handover_delivery"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:background="@drawable/border_drawable">
+
+         <androidx.core.widget.NestedScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:layout_constraintTop_toTopOf="parent">
+
+
+
+             <androidx.constraintlayout.widget.ConstraintLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+
+
+          <TextView
+              android:id="@+id/txt_account_verification"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/account_verification"
+              android:textFontWeight="700"
+              android:textSize="24sp"
+              android:textAllCaps="false"
+              android:textColor="#262626"
+              android:fontFamily="@font/inter_bold"
+              android:layout_marginTop="@dimen/_15sdp"
+              android:layout_marginStart="@dimen/_12sdp"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintStart_toStartOf="parent"/>
+
+          <TextView
+              android:id="@+id/txt_mobile_number"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/mobile_number"
+              android:textColor="#262626"
+              android:textAllCaps="false"
+              android:textSize="16sp"
+              android:textFontWeight="400"
+              android:fontFamily="@font/inter_regular"
+              android:layout_marginTop="@dimen/_20sdp"
+              app:layout_constraintTop_toBottomOf="@id/txt_account_verification"
+              app:layout_constraintStart_toStartOf="@id/txt_account_verification"/>
+
+          <EditText
+              android:id="@+id/ET_enter_mobile_number"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/enter_mobile_number_drawable"
+              android:hint="@string/enter_mobile_number"
+              android:textColorHint="#7D8597"
+              android:textFontWeight="400"
+              android:textSize="16sp"
+              android:textAllCaps="false"
+              android:textColor="#7D8597"
+              android:singleLine="true"
+              android:fontFamily="@font/inter_regular"
+              android:paddingVertical="@dimen/_15sdp"
+              android:paddingStart="@dimen/_10sdp"
+              android:paddingEnd="@dimen/_10sdp"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:layout_marginHorizontal="@dimen/_12sdp"
+              app:layout_constraintTop_toBottomOf="@id/txt_mobile_number"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submit_button"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_12sdp"
+            android:textFontWeight="600"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+                 <CheckBox
+                     android:id="@+id/checkBox"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="@dimen/_30sdp"
+                     android:layout_marginTop="@dimen/_180sdp"
+                     app:layout_constraintBottom_toTopOf="@id/txt_submit"
+                     app:layout_constraintStart_toStartOf="@id/txt_submit"
+                     app:layout_constraintTop_toBottomOf="@+id/ET_enter_mobile_number" />
+
+
+          <TextView
+              android:id="@+id/txt_i_have_read_terms"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="@id/checkBox"
+              app:layout_constraintStart_toEndOf="@id/checkBox"
+              android:layout_marginStart="@dimen/_10sdp"
+              android:text="@string/i_have_read_terms_privacy_policy_of_handover"
+              android:textFontWeight="400"
+              android:textSize="14sp"
+              android:textAllCaps="false"
+              android:fontFamily="@font/inter_regular"/>
+
+
+             </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+         </androidx.core.widget.NestedScrollView>
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

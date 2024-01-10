@@ -1,6 +1,5 @@
 package com.suyal.handovernewrideruis
 
-import android.R
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap

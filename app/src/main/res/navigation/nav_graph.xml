@@ -47,6 +47,9 @@
         <action
             android:id="@+id/action_profile_Fragment_to_language_Settings_Fragment"
             app:destination="@id/language_Settings_Fragment" />
+        <action
+            android:id="@+id/action_profile_Fragment_to_name_Fragment"
+            app:destination="@id/name_Fragment" />
 
     </fragment>
     <fragment
@@ -113,6 +116,45 @@
             android:id="@+id/action_language_Settings_Fragment_to_profile_Fragment"
             app:destination="@id/profile_Fragment" />
     </fragment>
+    <fragment
+        android:id="@+id/name_Fragment"
+        android:name="com.suyal.handovernewrideruis.Name_Fragment"
+        android:label="fragment_name_"
+        tools:layout="@layout/fragment_name_" >
+        <action
+            android:id="@+id/action_name_Fragment_to_handover_id_cardFragment"
+            app:destination="@id/handover_id_cardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.suyal.handovernewrideruis.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/authorize_Signatory_Fragment"
+        android:name="com.suyal.handovernewrideruis.Authorize_Signatory_Fragment"
+        android:label="fragment_authorize__signatory_"
+        tools:layout="@layout/fragment_authorize__signatory_" />
+    <fragment
+        android:id="@+id/business_Category_Fragment"
+        android:name="com.suyal.handovernewrideruis.Business_Category_Fragment"
+        android:label="fragment_business__category_"
+        tools:layout="@layout/fragment_business__category_" />
+    <fragment
+        android:id="@+id/business_Details_Fragment"
+        android:name="com.suyal.handovernewrideruis.Business_Details_Fragment"
+        android:label="fragment_business__details_"
+        tools:layout="@layout/fragment_business__details_" />
+    <fragment
+        android:id="@+id/fragment_earning"
+        android:name="com.suyal.handovernewrideruis.Fragment_earning"
+        android:label="fragment_earning"
+        tools:layout="@layout/fragment_earning" />
+    <fragment
+        android:id="@+id/otp_Verification_Fragment"
+        android:name="com.suyal.handovernewrideruis.Otp_Verification_Fragment"
+        android:label="fragment_otp__verification_"
+        tools:layout="@layout/fragment_otp__verification_" />
 
 
 </navigation>

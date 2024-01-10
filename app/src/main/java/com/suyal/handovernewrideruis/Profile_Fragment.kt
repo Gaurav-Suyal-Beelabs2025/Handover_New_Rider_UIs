@@ -67,6 +67,7 @@ class Profile_Fragment : Fragment() {
 
                 val handover_id_card =
                     view.findViewById<ConstraintLayout>(R.id.layout_handover_id_card)
+
 //                val rate_card =
 //                    view.findViewById<ConstraintLayout>(R.id.layout_documents_amp_details)
                 val document_details=view.findViewById<ConstraintLayout>(R.id.layout_documents_amp_details)
@@ -94,16 +95,16 @@ class Profile_Fragment : Fragment() {
 //            startActivityForResult(takePictureIntent, REQUEST_CODE)
 
 
-                    Navigation.findNavController(view).navigate(R.id.selfi_Fragment)
+                   // Navigation.findNavController(view).navigate(R.id.selfi_Fragment)
 
 
-//                    openBottomSheet();
+                    openBottomSheet();
 
                 }
 
 
                 handover_id_card.setOnClickListener {
-                    Navigation.findNavController(view).navigate(R.id.handover_id_cardFragment)
+                    Navigation.findNavController(view).navigate(R.id.name_Fragment)
 
                 }
 
@@ -135,7 +136,7 @@ class Profile_Fragment : Fragment() {
 
                 document_details.setOnClickListener {
 
-                    Navigation.findNavController(view).navigate(R.id.documents_DetailsFragment)
+                    Navigation.findNavController(view).navigate(R.id.accountFragment)
                 }
 
 //                rate_card.setOnClickListener {
@@ -171,6 +172,8 @@ class Profile_Fragment : Fragment() {
                 dialog.setContentView(view)
                 dialog.show()
 
+
+
                 camera!!.setOnClickListener {
                     val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
                     startActivityForResult(takePictureIntent, REQUEST_CODE)
@@ -178,6 +181,7 @@ class Profile_Fragment : Fragment() {
 
 
                 }
+
 
                 val gallery = view.findViewById<LinearLayout>(R.id.layout_gallery)
                 gallery.setOnClickListener {

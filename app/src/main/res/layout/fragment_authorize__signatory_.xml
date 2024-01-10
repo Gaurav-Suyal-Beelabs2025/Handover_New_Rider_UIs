@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/account_verification_verification"
+    tools:context=".Authorize_Signatory_Fragment">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_1sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:src="@drawable/arrow_back_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/authorize_signatory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/authorize_signatory"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/back_btn"
+            app:layout_constraintStart_toEndOf="@+id/back_btn"
+            app:layout_constraintTop_toBottomOf="@id/back_btn"
+            app:layout_constraintTop_toTopOf="@id/back_btn" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ic_hanover_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/handover_delivery"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_layout"/>
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:background="@drawable/border_drawable"
+           app:layout_constraintTop_toBottomOf="@id/ic_hanover_delivery"
+           app:layout_constraintBottom_toBottomOf="parent">
+
+
+           <androidx.core.widget.NestedScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toTopOf="parent">
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+           <TextView
+               android:id="@+id/tv_authorize_signatory"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/authorize_signatory"
+               android:textColor="#262626"
+               android:textFontWeight="700"
+               android:textSize="24sp"
+               android:textAllCaps="false"
+               android:fontFamily="@font/inter_bold"
+               android:layout_marginTop="@dimen/_15sdp"
+               android:layout_marginStart="@dimen/_15sdp"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/tv_authorize_signatory_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/authorize_signatory_name"
+                android:textColor="#262626"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textFontWeight="400"
+                android:fontFamily="@font/inter_regular"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_authorize_signatory"
+                app:layout_constraintStart_toStartOf="@id/tv_authorize_signatory"/>
+
+           <EditText
+               android:id="@+id/ET_enter_authorize_signatory_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/enter_mobile_number_drawable"
+               android:hint="@string/enter_authorize_signatory_name"
+               android:textColorHint="#7D8597"
+               android:textFontWeight="400"
+               android:textSize="16sp"
+               android:textAllCaps="false"
+               android:textColor="#7D8597"
+               android:singleLine="true"
+               android:fontFamily="@font/inter_regular"
+               android:paddingVertical="@dimen/_15sdp"
+               android:paddingStart="@dimen/_10sdp"
+               android:paddingEnd="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_marginHorizontal="@dimen/_12sdp"
+               app:layout_constraintTop_toBottomOf="@+id/tv_authorize_signatory_name"/>
+
+
+           <TextView
+               android:id="@+id/tv_authorize_signatory_number"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/authorize_signatory_number"
+               android:textColor="#262626"
+               android:textAllCaps="false"
+               android:textSize="16sp"
+               android:textFontWeight="400"
+               android:fontFamily="@font/inter_regular"
+               android:layout_marginTop="@dimen/_10sdp"
+               app:layout_constraintTop_toBottomOf="@id/ET_enter_authorize_signatory_name"
+               app:layout_constraintStart_toStartOf="@id/tv_authorize_signatory"/>
+
+           <EditText
+               android:id="@+id/ET_enter_authorize_signatory_number"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/enter_mobile_number_drawable"
+               android:hint="@string/enter_authorize_signatory_number"
+               android:textColorHint="#7D8597"
+               android:textFontWeight="400"
+               android:textSize="16sp"
+               android:textAllCaps="false"
+               android:textColor="#7D8597"
+               android:singleLine="true"
+               android:fontFamily="@font/inter_regular"
+               android:paddingVertical="@dimen/_15sdp"
+               android:paddingStart="@dimen/_10sdp"
+               android:paddingEnd="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_marginHorizontal="@dimen/_12sdp"
+               app:layout_constraintTop_toBottomOf="@+id/tv_authorize_signatory_number"/>
+
+
+           <TextView
+               android:id="@+id/txt_submit"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginHorizontal="@dimen/_12sdp"
+               android:layout_marginBottom="@dimen/_25sdp"
+               android:background="@drawable/submit_button"
+               android:fontFamily="@font/inter_semibold"
+               android:gravity="center"
+               android:paddingVertical="@dimen/_12sdp"
+               android:text="@string/submit"
+               android:textAllCaps="false"
+               android:textColor="@color/white"
+               android:textFontWeight="600"
+               android:textSize="20sp"
+               android:layout_marginTop="@dimen/_34sdp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/ET_enter_authorize_signatory_number"
+               tools:layout_editor_absoluteX="14dp" />
+
+
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.core.widget.NestedScrollView>
+
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

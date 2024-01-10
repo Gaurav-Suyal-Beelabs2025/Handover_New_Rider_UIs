@@ -40,7 +40,7 @@
     <string name="up1620200015886">UP1620200015886</string>
     <string name="update_new">Update New</string>
     <string name="share">Share</string>
-    <string name="view_declaration">View declaration</string>
+    <string name="view_declaration">Download declaration</string>
     <string name="zone">Zone</string>
     <string name="payout">Payout</string>
     <string name="payout_for_00_00am_23_59_pm">Payout for 00:00AM- 23:59 PM</string>
@@ -101,7 +101,7 @@
     <string name="notification_language">Notification Language</string>
     <string name="phone_number">Phone Number</string>
     <string name="package_details">Package Details</string>
-     <string name="package_weight"><font coler="#000000">Select Package Weight</font><font color="#686868">*</font></string>
+    <string name="package_weight"><font coler="#000000">Select Package Weight</font><font color="#686868">*</font></string>
     <string name="package_includes"><font coler="#000000">Does Package Includes</font><font color="#686868">*</font></string>
     <string name="cake">Cake</string>
     <string name="ice_cream">Ice Cream</string>
@@ -119,7 +119,7 @@
     <string name="maximum_5_photos">Maximum 5 photos</string>
     <string name="uploaded_photos_of_package">Uploaded photos of package</string>
     <string name="new_order_arrived">New Order Arrived!</string>
-     <string name="earning_42_16"><font coler="#686868">Earning</font><font color="#0F6FB5">\n₹42.16</font></string>
+    <string name="earning_42_16"><font coler="#686868">Earning</font><font color="#0F6FB5">\n₹42.16</font></string>
     <string name="distance_3_82km"><font coler="#686868">Distance:</font><font color="#0F6FB5">\n3.82km</font></string>
     <string name="type_bike"><font coler="#686868">Type:     </font><font color="#0F6FB5">\nBike</font></string>
     <string name="food_delivery">FOOD DELIVERY</string>
@@ -129,6 +129,38 @@
     <string name="drop">Drop</string>
     <string name="skip">Skip</string>
     <string name="accept">Accept</string>
+    <string name="business_category">Business Category</string>
+    <string name="select_your_business_category">Select your business category</string>
+    <string name="handover">Handover</string>
+    <string name="account_verification">Account Verification</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="i_have_read_terms_privacy_policy_of_handover"><font coler="#494949"> I have read</font><font color="#256FFF"> Terms &amp; Privacy </font><font color="#494949"> of \nHandover</font></string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="otp">OTP</string>
+    <string name="enter_the_6_digit_otp_sent_to">Enter the 6-digit OTP sent to</string>
+    <string name="_98735_33376">98735 33376</string>
+    <string name="business_details">Business Details</string>
+    <string name="authorize_signatory">Authorize Signatory</string>
+    <string name="authorize_signatory_name">Authorize Signatory Name</string>
+    <string name="enter_authorize_signatory_name">Enter authorize signatory name</string>
+    <string name="authorize_signatory_number">Authorize Signatory Number</string>
+    <string name="enter_authorize_signatory_number">Enter authorize signatory number</string>
+    <string name="business_type">Business Type</string>
+    <string name="business_name">Business Name</string>
+    <string name="enter_business_name">Enter business name</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="enter_brand_name">Enter brand name</string>
+
+
+    <string-array name="company_name">
+
+
+<item>Private ltd.</item>
+
+
+    </string-array>
+
 
 
 </resources>

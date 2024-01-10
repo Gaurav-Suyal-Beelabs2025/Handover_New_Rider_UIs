@@ -185,17 +185,16 @@
             app:layout_constraintStart_toEndOf="@id/ic_location"/>
 
 
-
         <LinearLayout
             android:id="@+id/status_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_11sdp"
-            android:layout_marginTop="@dimen/_27sdp"
             android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_25sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_address">
+            app:layout_constraintTop_toBottomOf="@+id/layout_images">
 
             <LinearLayout
                 android:id="@+id/rating_layout"
@@ -217,8 +216,8 @@
                     android:fontFamily="@font/sora_regular"
                     android:text="@string/_4_4"
                     android:textAllCaps="false"
-                    android:textFontWeight="400"
                     android:textColor="#282828"
+                    android:textFontWeight="400"
                     android:textSize="24sp" />
 
                 <TextView
@@ -228,10 +227,10 @@
                     android:layout_marginStart="@dimen/_12sdp"
                     android:fontFamily="@font/sora_regular"
                     android:text="@string/rating"
+                    android:textAllCaps="false"
                     android:textColor="#4B4B4B"
-                    android:textSize="14sp"
                     android:textFontWeight="400"
-                    android:textAllCaps="false"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -254,8 +253,8 @@
                     android:layout_marginStart="@dimen/_12sdp"
                     android:fontFamily="@font/sora_regular"
                     android:text="@string/_64"
-                    android:textFontWeight="400"
                     android:textColor="#282828"
+                    android:textFontWeight="400"
                     android:textSize="24sp" />
 
                 <TextView
@@ -290,8 +289,8 @@
                     android:layout_marginStart="@dimen/_12sdp"
                     android:fontFamily="@font/sora_regular"
                     android:text="@string/_12"
-                    android:textFontWeight="400"
                     android:textColor="#282828"
+                    android:textFontWeight="400"
                     android:textSize="24sp" />
 
                 <TextView
@@ -300,9 +299,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_12sdp"
                     android:fontFamily="@font/sora_regular"
-                    android:textFontWeight="400"
                     android:text="@string/months"
                     android:textColor="#4B4B4B"
+                    android:textFontWeight="400"
                     android:textSize="14sp" />
 
             </LinearLayout>
