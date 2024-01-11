@@ -57,6 +57,10 @@ class MainActivity : AppCompatActivity() {
                 bottomNavigationView.visibility=View.GONE
             }
 
+            else if (destination.id==R.id.handover_Listing_Fragment){
+                bottomNavigationView.visibility=View.GONE
+            }
+
 
 
 

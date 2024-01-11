@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/account_verification_verification"
+    tools:context=".Handover_Listing_Fragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_1sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:src="@drawable/ic_arrow_back_whit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/handover_store_listing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/handover_store_listing"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/back_btn"
+            app:layout_constraintStart_toEndOf="@+id/back_btn"
+            app:layout_constraintTop_toBottomOf="@id/back_btn"
+            app:layout_constraintTop_toTopOf="@id/back_btn" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/ic_handbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_handbook"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/border_drawable"
+        app:layout_constraintTop_toBottomOf="@id/ic_handbook">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+        <TextView
+            android:id="@+id/TV_register_your_business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_your_business"
+            android:textFontWeight="600"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#282828"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+         <ImageView
+             android:id="@+id/ic_line"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/img_line"
+             app:layout_constraintTop_toBottomOf="@id/TV_register_your_business"
+             app:layout_constraintEnd_toEndOf="@id/TV_register_your_business"/>
+
+        <TextView
+            android:id="@+id/tv_order_to_create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/in_order_to_create_store_first_complete_business_profile"
+            android:textColor="#686868"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textFontWeight="400"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@id/TV_register_your_business"
+            app:layout_constraintTop_toBottomOf="@id/TV_register_your_business" />
+
+        <LinearLayout
+            android:id="@+id/layout_benifit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/benefits_of_creating"
+            android:paddingVertical="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@id/tv_order_to_create"
+            app:layout_constraintTop_toBottomOf="@id/tv_order_to_create">
+
+            <TextView
+                android:id="@+id/tv_benefits_of_creating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/benefits_of_creating_store"
+                android:textFontWeight="500"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="#0F6FB5"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/arrow_forward_blue"
+              android:layout_marginStart="@dimen/_10sdp"
+              android:layout_marginEnd="@dimen/_11sdp"
+              android:layout_gravity="center_vertical"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_guidelines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guidelines"
+            android:textColor="#262626"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textFontWeight="600"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/layout_benifit"
+            app:layout_constraintStart_toStartOf="@id/layout_benifit"/>
+
+
+        <ImageView
+            android:id="@+id/ic_check_circle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_circle"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_guidelines"
+            app:layout_constraintStart_toStartOf="@id/tv_guidelines"/>
+
+         <TextView
+             android:id="@+id/tv_create_business"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/create_business"
+             android:textSize="16sp"
+             android:textAllCaps="false"
+             android:textColor="#686868"
+             android:textFontWeight="400"
+             android:layout_marginStart="@dimen/_10sdp"
+             app:layout_constraintTop_toTopOf="@id/ic_check_circle1"
+             app:layout_constraintBottom_toBottomOf="@id/ic_check_circle1"
+             app:layout_constraintStart_toEndOf="@id/ic_check_circle1"/>
+
+
+        <ImageView
+            android:id="@+id/ic_check_circle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_circle"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@id/ic_check_circle1"
+            app:layout_constraintTop_toBottomOf="@id/ic_check_circle1"/>
+
+        <TextView
+            android:id="@+id/tv_create_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_shop"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="#686868"
+            android:textFontWeight="400"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="@id/ic_check_circle2"
+            app:layout_constraintBottom_toBottomOf="@id/ic_check_circle2"
+            app:layout_constraintStart_toEndOf="@id/ic_check_circle2"/>
+
+        <ImageView
+            android:id="@+id/ic_check_circle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check_circle"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="@id/ic_check_circle2"
+            app:layout_constraintTop_toBottomOf="@id/ic_check_circle2"/>
+
+
+        <TextView
+            android:id="@+id/tv_create_shop2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_shop"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="#686868"
+            android:textFontWeight="400"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="@id/ic_check_circle3"
+            app:layout_constraintBottom_toBottomOf="@id/ic_check_circle3"
+            app:layout_constraintStart_toEndOf="@id/ic_check_circle3"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@drawable/submit_button"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_12sdp"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/_80sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_create_shop2" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+     </androidx.constraintlayout.widget.ConstraintLayout>

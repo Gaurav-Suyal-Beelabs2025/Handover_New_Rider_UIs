@@ -104,7 +104,7 @@ class Profile_Fragment : Fragment() {
 
 
                 handover_id_card.setOnClickListener {
-                    Navigation.findNavController(view).navigate(R.id.name_Fragment)
+                    Navigation.findNavController(view).navigate(R.id.handover_Listing_Fragment)
 
                 }
 

@@ -151,16 +151,21 @@
     <string name="enter_business_name">Enter business name</string>
     <string name="brand_name">Brand Name</string>
     <string name="enter_brand_name">Enter brand name</string>
+    <string name="handover_store_listing">Handover Store Listing</string>
+    <string name="register_your_business">Register Your Business</string>
+    <string name="in_order_to_create_store_first_complete_business_profile">In order to create store first complete business profile</string>
+    <string name="benefits_of_creating_store">Benefits of creating store</string>
+    <string name="create_business">Create Business</string>
+    <string name="create_shop">Create Shop</string>
 
 
     <string-array name="company_name">
 
 
-<item>Private ltd.</item>
+        <item>Private ltd.</item>
 
 
     </string-array>
-
 
 
 </resources>

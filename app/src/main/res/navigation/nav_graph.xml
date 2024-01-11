@@ -155,6 +155,11 @@
         android:name="com.suyal.handovernewrideruis.Otp_Verification_Fragment"
         android:label="fragment_otp__verification_"
         tools:layout="@layout/fragment_otp__verification_" />
+    <fragment
+        android:id="@+id/handover_Listing_Fragment"
+        android:name="com.suyal.handovernewrideruis.Handover_Listing_Fragment"
+        android:label="fragment_handover__listing_"
+        tools:layout="@layout/fragment_handover__listing_" />
 
 
 </navigation>
