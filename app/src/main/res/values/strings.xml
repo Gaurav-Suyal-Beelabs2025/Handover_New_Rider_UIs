@@ -157,6 +157,9 @@
     <string name="benefits_of_creating_store">Benefits of creating store</string>
     <string name="create_business">Create Business</string>
     <string name="create_shop">Create Shop</string>
+    <string name="personal_care">Personal Care</string>
+    <string name="confirm">Confirm</string>
+    <string name="view_13_more">View 13 more</string>
 
 
     <string-array name="company_name">

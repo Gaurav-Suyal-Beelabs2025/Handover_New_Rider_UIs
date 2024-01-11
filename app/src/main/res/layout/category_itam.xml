@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+     <RadioButton
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/personal_care"
+         android:textColor="#262626"
+         android:textFontWeight="400"
+         android:textAllCaps="false"
+         android:textSize="18sp"
+         android:paddingVertical="@dimen/_10sdp"
+         android:buttonTint="#F0592A"
+         android:checked="true"
+         android:padding="@dimen/_5sdp"
+         android:fontFamily="@font/inter_regular"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
