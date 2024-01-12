@@ -160,6 +160,11 @@
         android:name="com.suyal.handovernewrideruis.Handover_Listing_Fragment"
         android:label="fragment_handover__listing_"
         tools:layout="@layout/fragment_handover__listing_" />
+    <fragment
+        android:id="@+id/about_handover_Fragment"
+        android:name="com.suyal.handovernewrideruis.About_handover_Fragment"
+        android:label="fragment_about_handover_"
+        tools:layout="@layout/fragment_about_handover_" />
 
 
 </navigation>

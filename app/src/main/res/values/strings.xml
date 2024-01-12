@@ -160,6 +160,18 @@
     <string name="personal_care">Personal Care</string>
     <string name="confirm">Confirm</string>
     <string name="view_13_more">View 13 more</string>
+    <string name="about_handover">About handover</string>
+    <string name="store_on_handover_brings_member_together_in_topic_based_groups">Store on handover brings member together in topic-based groups</string>
+    <string name="how_you_can_use_store">How you can use store</string>
+    <string name="create_a_store">Create a store:</string>
+    <string name="anyone_can_create_a_handover_store_simply_create_topic_based_groups_that_you_want_in_your_store_or_add_your_existing_handover_group">Anyone can create a handover store. simply create topic-based groups that you want in your store or add your existing handover group.</string>
+    <string name="reach_members_with_announcement">Reach members with announcement:</string>
+    <string name="you_can_use_the_announcement_space_to_easily_share_important_updates_with_everyone_in_the_store">You can use the announcement space to easily share important updates with everyone in the store.</string>
+
+    <string name="next">Next</string>
+    <string name="_1_important_store_could_be_pinned_on_top">1. Important store could be pinned on top.</string>
+    <string name="other_store_you_have_been_created">2. Other store you have been created.</string>
+    <string name="you_can_add_store_whenever_you_want">3. You can add store whenever you want.</string>
 
 
     <string-array name="company_name">

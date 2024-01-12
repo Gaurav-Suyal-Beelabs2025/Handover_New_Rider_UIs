@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/account_verification_verification"
+    tools:context=".About_handover_Fragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_1sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:src="@drawable/ic_arrow_back_whit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/about_handover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/about_handover"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/back_btn"
+            app:layout_constraintStart_toEndOf="@+id/back_btn"
+            app:layout_constraintTop_toBottomOf="@id/back_btn"
+            app:layout_constraintTop_toTopOf="@id/back_btn" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+       <ImageView
+           android:id="@+id/ic_object"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/img_objects"
+           android:layout_marginTop="@dimen/_15sdp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/toolbar_layout"/>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:background="@drawable/border_drawable"
+           app:layout_constraintTop_toBottomOf="@id/ic_object"
+           app:layout_constraintBottom_toBottomOf="parent">
+
+           <androidx.core.widget.NestedScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toTopOf="parent">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+
+
+           <TextView
+               android:id="@+id/tv_about_handover"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/about_handover"
+               android:textColor="#262626"
+               android:textFontWeight="700"
+               android:textAllCaps="false"
+               android:textSize="18sp"
+               android:fontFamily="@font/inter_bold"
+               android:layout_marginTop="@dimen/_15sdp"
+               android:layout_marginStart="@dimen/_12sdp"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintStart_toStartOf="parent"/>
+
+           <TextView
+               android:id="@+id/tv_store_on_handover"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="@string/store_on_handover_brings_member_together_in_topic_based_groups"
+               android:textSize="14sp"
+               android:textAllCaps="false"
+               android:textFontWeight="400"
+               android:textColor="#686868"
+               android:fontFamily="@font/inter_regular"
+               android:layout_marginEnd="@dimen/_12sdp"
+               android:layout_marginTop="@dimen/_7sdp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="@id/tv_about_handover"
+               app:layout_constraintTop_toBottomOf="@id/tv_about_handover"/>
+
+
+           <TextView
+               android:id="@+id/tv_how_you_can_use_store"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/how_you_can_use_store"
+               android:textColor="#262626"
+               android:textFontWeight="600"
+               android:textAllCaps="false"
+               android:textSize="16sp"
+               android:fontFamily="@font/inter_semibold"
+               android:layout_marginTop="@dimen/_17sdp"
+               app:layout_constraintStart_toStartOf="@id/tv_store_on_handover"
+               app:layout_constraintTop_toBottomOf="@+id/tv_store_on_handover"/>
+
+           <TextView
+               android:id="@+id/tv_create_a_store"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/create_a_store"
+               android:textSize="16sp"
+               android:textAllCaps="false"
+               android:textFontWeight="500"
+               android:textColor="#262626"
+               android:fontFamily="@font/inter_medium"
+               android:layout_marginTop="@dimen/_12sdp"
+               app:layout_constraintTop_toBottomOf="@id/tv_how_you_can_use_store"
+               app:layout_constraintStart_toStartOf="@id/tv_how_you_can_use_store"/>
+
+           <TextView
+               android:id="@+id/tv_anyone_can_create"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:textColor="#686868"
+               android:textFontWeight="400"
+               android:textAllCaps="false"
+               android:textSize="14sp"
+               android:text="@string/anyone_can_create_a_handover_store_simply_create_topic_based_groups_that_you_want_in_your_store_or_add_your_existing_handover_group"
+               android:fontFamily="@font/inter_regular"
+               android:layout_marginEnd="@dimen/_19sdp"
+               android:layout_marginTop="@dimen/_4sdp"
+               app:layout_constraintStart_toStartOf="@id/tv_create_a_store"
+               app:layout_constraintTop_toBottomOf="@id/tv_create_a_store"
+               app:layout_constraintEnd_toEndOf="parent"/>
+
+           <TextView
+               android:id="@+id/tv_reach_members"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/reach_members_with_announcement"
+               android:textSize="16sp"
+               android:textAllCaps="false"
+               android:textFontWeight="500"
+               android:textColor="#262626"
+               android:fontFamily="@font/inter_medium"
+               android:layout_marginTop="@dimen/_12sdp"
+               app:layout_constraintTop_toBottomOf="@id/tv_anyone_can_create"
+               app:layout_constraintStart_toStartOf="@id/tv_how_you_can_use_store"/>
+
+
+           <TextView
+               android:id="@+id/tv_you_can_use"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:textColor="#686868"
+               android:textFontWeight="400"
+               android:textAllCaps="false"
+               android:textSize="14sp"
+               android:text="@string/you_can_use_the_announcement_space_to_easily_share_important_updates_with_everyone_in_the_store"
+               android:fontFamily="@font/inter_regular"
+               android:layout_marginEnd="@dimen/_12sdp"
+               android:layout_marginTop="@dimen/_4sdp"
+               app:layout_constraintStart_toStartOf="@id/tv_create_a_store"
+               app:layout_constraintTop_toBottomOf="@id/tv_reach_members"
+               app:layout_constraintEnd_toEndOf="parent"/>
+
+             <ImageView
+                 android:id="@+id/ic_community_2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_community_2"
+                 android:layout_marginTop="@dimen/_45sdp"
+                 app:layout_constraintTop_toBottomOf="@id/tv_you_can_use"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"/>
+
+           <TextView
+               android:id="@+id/tv_important_store"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:textColor="#686868"
+               android:textFontWeight="400"
+               android:textAllCaps="false"
+               android:textSize="15sp"
+               android:text="@string/_1_important_store_could_be_pinned_on_top"
+               android:fontFamily="@font/inter_regular"
+               android:layout_marginEnd="@dimen/_36sdp"
+               android:layout_marginTop="@dimen/_28sdp"
+               app:layout_constraintStart_toStartOf="@id/tv_create_a_store"
+               app:layout_constraintTop_toBottomOf="@id/ic_community_2"
+               app:layout_constraintEnd_toEndOf="parent"/>
+
+                   <TextView
+                       android:id="@+id/tv_other_store"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/inter_regular"
+                       android:text="@string/other_store_you_have_been_created"
+                       android:textAllCaps="false"
+                       android:textColor="#686868"
+                       android:textFontWeight="400"
+                       android:textSize="15sp"
+                       android:layout_marginTop="@dimen/_3sdp"
+                       app:layout_constraintTop_toBottomOf="@id/tv_important_store"
+                       app:layout_constraintEnd_toEndOf="@id/tv_important_store"
+                       app:layout_constraintStart_toStartOf="@id/tv_create_a_store" />
+
+                   <TextView
+                       android:id="@+id/tv_you_can_add_store"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/inter_regular"
+                       android:text="@string/you_can_add_store_whenever_you_want"
+                       android:textAllCaps="false"
+                       android:textColor="#686868"
+                       android:textFontWeight="400"
+                       android:textSize="15sp"
+                       android:layout_marginTop="@dimen/_3sdp"
+                       app:layout_constraintTop_toBottomOf="@id/tv_other_store"
+                       app:layout_constraintEnd_toEndOf="@id/tv_important_store"
+                       app:layout_constraintStart_toStartOf="@id/tv_create_a_store" />
+
+
+                   <TextView
+               android:id="@+id/txt_next"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginHorizontal="@dimen/_12sdp"
+               android:layout_marginBottom="@dimen/_30sdp"
+               android:background="@drawable/submit_button"
+               android:fontFamily="@font/inter_semibold"
+               android:gravity="center"
+               android:paddingVertical="@dimen/_12sdp"
+               android:text="@string/next"
+               android:textAllCaps="false"
+               android:textColor="@color/white"
+               android:textFontWeight="600"
+               android:textSize="20sp"
+               android:layout_marginTop="@dimen/_40sdp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/tv_you_can_add_store" />
+
+
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.core.widget.NestedScrollView>
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>

@@ -84,7 +84,7 @@ class Profile_Fragment : Fragment() {
 
                 lanuage_setting.setOnClickListener {
 
-                    Navigation.findNavController(view).navigate(R.id.language_Settings_Fragment)
+                    Navigation.findNavController(view).navigate(R.id.about_handover_Fragment)
 
                 }
 
