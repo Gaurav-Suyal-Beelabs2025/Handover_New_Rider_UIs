@@ -11,4 +11,7 @@
     <color name="broun">#686868</color>
     <color name="blue">#0F6FB5</color>
     <color name="red">#D34620</color>
+    <color name="medium_black">#262626</color>
+    <color name="light_red">#FF0000</color>
+    <color name="light_gre">#686868</color>
 </resources>

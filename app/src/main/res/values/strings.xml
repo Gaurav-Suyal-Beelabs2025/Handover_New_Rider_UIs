@@ -172,6 +172,19 @@
     <string name="_1_important_store_could_be_pinned_on_top">1. Important store could be pinned on top.</string>
     <string name="other_store_you_have_been_created">2. Other store you have been created.</string>
     <string name="you_can_add_store_whenever_you_want">3. You can add store whenever you want.</string>
+    <string name="edit">Edit</string>
+    <string name="aggrawal_store">Aggrawal Store</string>
+    <string name="_9934967487">9934967487</string>
+    <string name="restaurant_gmail_com">restaurant@gmail.com</string>
+    <string name="add_new_store">Add New Store</string>
+    <string name="pending">Pending</string>
+    <string name="in_order_to_list_your_product_you_have_to_add_your_store_here">In order to list your product you have to add your store here</string>
+    <string name="business_pan">Business PAN</string>
+    <string name="business_profile">Business Profile</string>
+    <string name="gst">GST</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="stores">Stores</string>
+    <string name="setting">Setting</string>
 
 
     <string-array name="company_name">

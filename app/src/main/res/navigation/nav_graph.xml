@@ -165,6 +165,11 @@
         android:name="com.suyal.handovernewrideruis.About_handover_Fragment"
         android:label="fragment_about_handover_"
         tools:layout="@layout/fragment_about_handover_" />
+    <fragment
+        android:id="@+id/business_Profile_Fragment"
+        android:name="com.suyal.handovernewrideruis.Business_Profile_Fragment"
+        android:label="fragment_business__profile_"
+        tools:layout="@layout/fragment_business__profile_" />
 
 
 </navigation>

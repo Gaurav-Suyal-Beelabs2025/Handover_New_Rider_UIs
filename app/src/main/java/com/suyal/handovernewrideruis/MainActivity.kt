@@ -65,6 +65,10 @@ class MainActivity : AppCompatActivity() {
                 bottomNavigationView.visibility=View.GONE
             }
 
+            else if (destination.id==R.id.business_Profile_Fragment){
+                bottomNavigationView.visibility=View.GONE
+            }
+
 
 
 

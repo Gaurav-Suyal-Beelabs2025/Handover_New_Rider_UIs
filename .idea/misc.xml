@@ -36,12 +36,14 @@
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/package_details_drawable.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/package_weight_drawable.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/payout_drawable.xml" value="0.2055" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/pending_drawable.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/rating_drawable.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/selected.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/selected_text_coler.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/share_button_drawable.xml" value="0.2055" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/skip_button.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/spinner_bacground.xml" value="0.2265" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/store_drawable.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/submit_button.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/timmer_drawable.xml" value="0.2265" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/drawable/unseleted.xml" value="0.2265" />
@@ -56,6 +58,7 @@
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_authorize__signatory_.xml" value="0.264" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_business__category_.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_business__details_.xml" value="0.264" />
+        <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_business__profile_.xml" value="0.264" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_documents__details.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_earning.xml" value="0.25" />
         <entry key="..\:/Users/ritik/AndroidStudioProjects/Handover_New_Rider_UIs/app/src/main/res/layout/fragment_earning_.xml" value="0.25" />
